@@ -9,12 +9,11 @@ import {
   SidebarMenuWrapper,
   ContactLink,
   Socials,
-  MoreButton,
+ 
 } from "./SidebarElements";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
-import { ArrowForward } from "@material-ui/icons";
-import { Button } from "@material-ui/core";
+
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (

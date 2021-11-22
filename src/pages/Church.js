@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
-import { Button } from "@material-ui/core";
+
 
 const Church = () => {
   const [isOpen, setIsOpen] = useState(false);
