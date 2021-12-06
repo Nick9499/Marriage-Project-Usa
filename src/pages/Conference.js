@@ -31,23 +31,6 @@ const Conference = () => {
           Conference will reignite your connection and cultivate enduring love
           for each other.
         </p>
-        <InvestSvg>
-          <svg
-            id='visual'
-            viewBox='0 0 1366 768'
-            width='100%'
-            height='768'
-            xmlns='http://www.w3.org/2000/svg'
-            version='1.1'
-          >
-            <path
-              d='M0 103L32.5 99.2C65 95.3 130 87.7 195 86.8C260 86 325 92 390 104.3C455 116.7 520 135.3 585.2 139C650.3 142.7 715.7 131.3 780.8 124.8C846 118.3 911 116.7 976 117.2C1041 117.7 1106 120.3 1171 124C1236 127.7 1301 132.3 1333.5 134.7L1366 137L1366 0L1333.5 0C1301 0 1236 0 1171 0C1106 0 1041 0 976 0C911 0 846 0 780.8 0C715.7 0 650.3 0 585.2 0C520 0 455 0 390 0C325 0 260 0 195 0C130 0 65 0 32.5 0L0 0Z'
-              fill='#f47ca8'
-              stroke-linecap='round'
-              stroke-linejoin='miter'
-            ></path>
-          </svg>
-        </InvestSvg>
       </Invest>
       <Expect>
         <Body>
@@ -65,27 +48,10 @@ const Conference = () => {
         </Body>
         <Image>
           <img
-            src='https://xomarriage.com/wp-content/uploads/2021/03/Screen-Shot-2021-03-01-at-1.15.39-PM.png'
-            alt='img4'
+            src="https://xomarriage.com/wp-content/uploads/2021/03/Screen-Shot-2021-03-01-at-1.15.39-PM.png"
+            alt="img4"
           />
         </Image>
-        <ExpectSvg>
-          <svg
-            id='visual'
-            viewBox='0 0 1366 768'
-            width='100%'
-            height='768'
-            xmlns='http://www.w3.org/2000/svg'
-            version='1.1'
-          >
-            <path
-              d='M0 69L32.5 82.3C65 95.7 130 122.3 195 120.7C260 119 325 89 390 78C455 67 520 75 585.2 90.5C650.3 106 715.7 129 780.8 131.8C846 134.7 911 117.3 976 108.2C1041 99 1106 98 1171 106.8C1236 115.7 1301 134.3 1333.5 143.7L1366 153L1366 0L1333.5 0C1301 0 1236 0 1171 0C1106 0 1041 0 976 0C911 0 846 0 780.8 0C715.7 0 650.3 0 585.2 0C520 0 455 0 390 0C325 0 260 0 195 0C130 0 65 0 32.5 0L0 0Z'
-              fill='#fc9e49'
-              stroke-linecap='round'
-              stroke-linejoin='miter'
-            ></path>
-          </svg>
-        </ExpectSvg>
       </Expect>
       <Church>
         <h1>
@@ -99,10 +65,9 @@ const Conference = () => {
           professionals.
         </p>
         <Button
-          variant='contained'
-          color='primary'
-          onClick={() => history.push("/churches")}
-        >
+          variant="contained"
+          color="primary"
+          onClick={() => history.push("/churches")}>
           LEARN MORE
         </Button>
       </Church>
@@ -140,7 +105,7 @@ const ConferenceBody = styled.div`
 const Invest = styled.div`
   position: relative;
   background-color: #f47ca8;
-  height: 80vh;
+  height: 100%;
   h1 {
     text-align: center;
     padding-bottom: 3%;
@@ -155,7 +120,7 @@ const Invest = styled.div`
   }
   @media screen and (max-width: 768px) {
     margin-top: 20%;
-    height: 60vh;
+    height: 60%;
     h1 {
       font-size: 200%;
       margin-bottom: 5%;
@@ -166,27 +131,16 @@ const Invest = styled.div`
       line-height: 140%;
     }
   }
-  @media screen and (max-width: 1365px) and (min-width: 768px) {
-    height: 30vh;
+  @media screen and (max-width: 1366px) and (min-width: 1024px) {
+    height: 80%;
   }
 `;
 
-const InvestSvg = styled.div`
-  z-index: 9;
-  position: absolute;
-  top: 90%;
-  @media screen and (max-width: 768px) {
-    top: 42%;
-  }
-  @media screen and (max-width: 1365px) and (min-width: 768px) {
-    top: 70%;
-  }
-`;
 const Expect = styled.div`
   position: relative;
   padding: 5%;
   background-color: #fc9e49;
-  height: 90vh;
+  height: 120%;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 5%;
@@ -197,27 +151,16 @@ const Expect = styled.div`
     }
     grid-template-columns: 100%;
     gap: 0%;
-    height: 110vh;
+
     p {
       text-align: justify;
       padding-bottom: 5%;
     }
   }
   @media screen and (max-width: 1365px) and (min-width: 768px) {
-    height: 50vh;
   }
 `;
 
-const ExpectSvg = styled.div`
-  position: absolute;
-  top: 90%;
-  @media screen and (max-width: 768px) {
-    top: 68%;
-  }
-  @media screen and (max-width: 1365px) and (min-width: 768px) {
-    top: 80%;
-  }
-`;
 const Body = styled.div`
   h1 {
     margin-bottom: 0%;
@@ -242,7 +185,7 @@ const Image = styled.div`
 const Church = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-06.png");
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   h1 {
     margin-bottom: 0;
@@ -261,7 +204,6 @@ const Church = styled.div`
     margin-top: 5%;
   }
   @media screen and (max-width: 768px) {
-    height: 60vh;
     h1 {
       padding-top: 15%;
       font-size: 150%;
@@ -274,6 +216,5 @@ const Church = styled.div`
     }
   }
   @media screen and (max-width: 1365px) and (min-width: 768px) {
-    height: 50vh;
   }
 `;

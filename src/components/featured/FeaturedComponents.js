@@ -7,8 +7,8 @@ const FeaturedComponents = () => {
     <Featured>
       <Image>
         <img
-          src='https://xomarriage.com/wp-content/uploads/2021/06/82056207_2643171862597705_7871141531199995904_n-1.jpg'
-          alt='img3'
+          src="https://xomarriage.com/wp-content/uploads/2021/06/82056207_2643171862597705_7871141531199995904_n-1.jpg"
+          alt="img3"
         />
       </Image>
       <Content>
@@ -24,7 +24,7 @@ const FeaturedComponents = () => {
           Barbara restore their marriage, and how they continue to use their
           story to help other couples.
         </p>
-        <ButtonGroup variant='contained' color='primary'>
+        <ButtonGroup variant="contained" color="primary">
           <Button>READ MORE</Button>
           <Button>VIEW ALL STORIES</Button>
         </ButtonGroup>
@@ -36,6 +36,7 @@ const FeaturedComponents = () => {
 export default FeaturedComponents;
 
 const Featured = styled.div`
+  height: 130%;
   /* position: relative; */
   padding: 10%;
   display: grid;
@@ -43,6 +44,7 @@ const Featured = styled.div`
   gap: 5%;
   @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
+    height: 170%;
   }
 `;
 

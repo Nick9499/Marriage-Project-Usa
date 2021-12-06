@@ -9,13 +9,13 @@ const AboutComponent = () => {
     <About>
       <Image>
         <img
-          src='https://xomarriage.com/wp-content/uploads/2021/01/photo-2.jpg'
-          alt='img1'
+          src="https://xomarriage.com/wp-content/uploads/2021/01/photo-2.jpg"
+          alt="img1"
         />
         <img
-          src='https://xomarriage.com/wp-content/uploads/2021/01/photo-1.jpg'
-          alt='img2'
-          className='over-image'
+          src="https://xomarriage.com/wp-content/uploads/2021/01/photo-1.jpg"
+          alt="img2"
+          className="over-image"
         />
       </Image>
       <AboutContent>
@@ -28,10 +28,9 @@ const AboutComponent = () => {
           resources, and the provision of motivating digital content.
         </p>
         <Button
-          variant='contained'
-          color='primary'
-          onClick={() => history.push("/about")}
-        >
+          variant="contained"
+          color="primary"
+          onClick={() => history.push("/about")}>
           LEARN MORE
         </Button>
       </AboutContent>
@@ -46,7 +45,7 @@ const About = styled.div`
   background: #f8e71c;
   display: grid;
   grid-template-columns: 60% 40%;
-  margin-bottom: 3%;
+
   @media screen and (max-width: 767px) {
     grid-template-columns: 100%;
     padding-bottom: -20%;
@@ -81,8 +80,9 @@ const AboutContent = styled.div`
   margin-bottom: 5%;
   padding: 5%;
   h1 {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 400%;
+    padding-bottom: 5%;
   }
   p {
     font-weight: bold;
@@ -92,7 +92,7 @@ const AboutContent = styled.div`
   @media screen and (max-width: 767px) {
     h1 {
       font-size: 250%;
-      margin-bottom: 7%;
+      padding-bottom: 7%;
     }
   }
 `;

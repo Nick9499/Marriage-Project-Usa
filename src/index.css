@@ -1,31 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
 body {
-	margin: 0;
-	font-family: "Quicksand", cursive;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: "Courier New", Courier, monospaces;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 .shape-fill {
-	fill: #4a90e2;
+  fill: #4a90e2;
 }
 a:hover {
-	color: #007bc6;
-	transition: all 1s;
+  color: #007bc6;
+  transition: all 1s;
 }
 * {
-	box-sizing: border-box;
-	padding: 0%;
-	margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 .shape-fill-home {
-	fill: #f8e71c;
+  fill: #f8e71c;
 }
 .shape-fill-about {
-	fill: #f8e71c;
+  fill: #f8e71c;
 }

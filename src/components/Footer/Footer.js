@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Facebook, Instagram, Twitter, YouTube } from "@material-ui/icons";
 import { useHistory } from "react-router";
+import logo from "../../images/logo.svg";
 
 const Footer = () => {
   const history = useHistory();
@@ -10,35 +11,35 @@ const Footer = () => {
     <FooterContaner>
       <FooterTop>
         <h2>Happily ever-learning</h2>
-        <h2 className='small'>
+        <h2 className="small">
           Sign up for the XO Newsletter to receive weekly marriage advice.
         </h2>
-        <input type='text' placeholder='you@email.com' />
-        <Button variant='contained'>SEND</Button>
+        <input type="text" placeholder="you@email.com" />
+        <Button variant="contained">SEND</Button>
       </FooterTop>
       <FooterMid>
         <Contact>
           <h5>Contact Us</h5>
           <p>
-            <a href='tel:123456789'>123456789</a>
+            <a href="tel:123456789">123456789</a>
           </p>
           <p>info@marriageprojectusa</p>
           <h5>Stay Connected</h5>
           <Socials>
             <span>
-              <Facebook fontSize='large' />
+              <Facebook fontSize="large" />
             </span>
             <span>
               {" "}
-              <Instagram fontSize='large' />
+              <Instagram fontSize="large" />
             </span>
             <span>
               {" "}
-              <Twitter fontSize='large' />
+              <Twitter fontSize="large" />
             </span>
             <span>
               {" "}
-              <YouTube fontSize='large' />
+              <YouTube fontSize="large" />
             </span>
           </Socials>
         </Contact>
@@ -49,18 +50,14 @@ const Footer = () => {
             partnership or donation to the Marriage
           </p>
           <Button
-            variant='contained'
-            color='primary'
-            onClick={() => history.push("/give")}
-          >
+            variant="contained"
+            color="primary"
+            onClick={() => history.push("/give")}>
             Give
           </Button>
         </Give>
         <Logo>
-          <img
-            src='https://xomarriage.com/wp-content/uploads/2020/10/xo_marriage_horizontal-lockup-logo-white-rgb-500px@72ppi-min.png'
-            alt='logo'
-          />
+          <img src={logo} alt="logo" />
         </Logo>
       </FooterMid>
       <FooterBottom>

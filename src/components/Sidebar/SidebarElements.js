@@ -70,6 +70,7 @@ export const SidebarMenuWrapper = styled.div`
 `;
 
 export const SidebarMenu = styled.ul`
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
   h4 {
