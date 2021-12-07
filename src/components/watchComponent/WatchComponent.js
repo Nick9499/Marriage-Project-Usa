@@ -9,8 +9,8 @@ const WatchComponent = () => {
       <p>
         Watch encouraging video content from leading marriage experts like Jimmy{" "}
         <br />
-        Evans, Dave and Ashley Willis and more, on XO Now and our XO Marriage{" "}
-        <br />
+        Evans, Dave and Ashley Willis and more, on Marriage Project Now Now and
+        our Marriage Project <br />
         YouTube channel.
       </p>
       <Button variant="contained" color="primary">

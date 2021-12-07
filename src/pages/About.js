@@ -17,8 +17,8 @@ const About = () => {
       <Mission>
         <h1>Our Mission</h1>
         <p>
-          XO Marriage exists to help couples have a healthy and strong marriage.{" "}
-          <br />
+          The Marriage Project exists to help couples have a healthy and strong
+          marriage. <br />
           We do this by hosting conferences, creating resources, and offering{" "}
           encouraging digital content.
         </p>

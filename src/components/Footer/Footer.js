@@ -63,8 +63,8 @@ const Footer = () => {
       <FooterBottom>
         <small>Accredited by the ECFA Since 1996</small>
         <small>
-          © Copyright 2021 XO Marriage. All rights reserved. Designed by
-          circles+co
+          © Copyright 2021 The Marriage Project. All rights reserved. Designed
+          by circles+co
         </small>
       </FooterBottom>
     </FooterContaner>

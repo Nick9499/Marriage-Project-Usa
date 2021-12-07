@@ -13,7 +13,7 @@ const FeaturedComponents = () => {
       </Image>
       <Content>
         <h1>Featured Story</h1>
-        <h2>An XO Marriage Story: Dry Bones</h2>
+        <h2>The Marriage Project Story: Dry Bones</h2>
         <p>
           Kevin and Barbara have been married almost 32 years, but the cracks in
           their marriage started around year 23. After about two years, those
