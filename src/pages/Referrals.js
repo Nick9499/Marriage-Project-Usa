@@ -11,9 +11,9 @@ const Referrals = () => {
   };
   return (
     <ReferralsContent>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} isOpen={isOpen} />
       <Banner>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} isOpen={isOpen} />
         <h2>Marriage Help</h2>
         <h1>Referrals</h1>
       </Banner>
@@ -27,8 +27,8 @@ const Referrals = () => {
           4 days of small, intimate and <br /> one on one sessions with Dr.
           Eddie and the Team..
         </p>
-        <p className='bold'>WEBSITE</p>
-        <p className='bold'>ABOUT</p>
+        <p className="bold">WEBSITE</p>
+        <p className="bold">ABOUT</p>
         <p>
           The four-day retreat at a five-star resort for struggling couples{" "}
           <br /> is full of shared activities, team building exercises and
@@ -74,21 +74,20 @@ const Referrals = () => {
 export default Referrals;
 
 export const ReferralsContent = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2021/03/referrals-hero.png");
-  background-size: cover;
-  height: 70vh;
+  height: 100%;
   @media screen and (max-width: 768px) {
-    height: 35vh;
   }
   @media screen and (max-width: 1365px) and (min-width: 768px) {
-    height: 30vh;
   }
 `;
 const Banner = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://xomarriage.com/wp-content/uploads/2021/03/referrals-hero.png");
+  background-size: cover;
+  height: 40vh;
   h1 {
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 400%;
     padding-left: 7%;
   }
@@ -98,6 +97,15 @@ const Banner = styled.div`
     font-size: 200%;
     padding-top: 5%;
     padding-left: 7%;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 250%;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 150%;
+    }
   }
 `;
 const Intensives = styled.div`
@@ -129,13 +137,15 @@ const Intensives = styled.div`
   @media screen and (max-width: 768px) {
     h1 {
       margin-top: 35%;
-      font-size: 200%;
+      font-size: 150%;
       margin-bottom: 15%;
     }
     h2 {
       margin-bottom: 10%;
+      font-size: 130%;
     }
     p {
+      padding-right: 10%;
     }
   }
 `;

@@ -61,10 +61,12 @@ const Image = styled.div`
 const Content = styled.div`
   h1 {
     font-size: 400%;
+    font-weight: 500;
   }
   h2 {
     margin-top: 7%;
     font-size: 200%;
+    font-weight: 500;
   }
   p {
     margin-top: 7%;

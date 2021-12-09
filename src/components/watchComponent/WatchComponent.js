@@ -34,6 +34,7 @@ const Watch = styled.div`
   h1 {
     color: #fff;
     font-size: 400%;
+    font-weight: 500;
   }
   p {
     color: #fff;
@@ -47,6 +48,9 @@ const Watch = styled.div`
       font-size: 250%;
       text-align: right;
       margin-top: 15%;
+    }
+    p {
+      text-align: left;
     }
   }
   /*  @media screen and (min-width: 1024px) and (max-width: 1365px) {
