@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
+import axios from "axios";
 
 const Podcast = () => {
+  const url = `https://cdn.contentful.com/spaces/nxaaw3hc8jri/environments/master/entries?access_token=B7oUkHVltX7AD4UqADE5our_k21roblLdzizAWczntE`;
   const [isOpen, setIsOpen] = useState(false);
+  const [data, setData] = useState([]);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    axios.get(url).then((res) => {
+      console.log(res.data.items);
+      setData(res.data.items);
+    });
+  }, [url]);
   return (
     <PodcastContainer>
       <Banner>
@@ -22,6 +32,17 @@ const Podcast = () => {
           Listen to weekly relationship advice from leading marriage experts!
         </h2>
       </PodcastSection>
+      <PodcastCardContainer>
+        {data &&
+          data.map((item, index) => (
+            <PodcastCard key={index}>
+              <a href={item.fields.url} target="_blank" rel="noreferrer">
+                <img src={item.fields.image} alt={item.fields.name} />
+              </a>
+              <h2>{item.fields.name}</h2>
+            </PodcastCard>
+          ))}
+      </PodcastCardContainer>
       <Footer />
     </PodcastContainer>
   );
@@ -63,6 +84,7 @@ const PodcastSection = styled.div`
     font-weight: 500;
     font-size: 250%;
   }
+
   h2 {
     color: #fff;
     padding-top: 2%;
@@ -78,5 +100,31 @@ const PodcastSection = styled.div`
       font-size: 120%;
       padding-bottom: 20%;
     }
+  }
+`;
+
+const PodcastCardContainer = styled.div`
+  padding: 5%;
+  padding-bottom: 10%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 5%;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    grid-template-columns: 50% 50%;
+    padding: 8%;
+  }
+`;
+const PodcastCard = styled.div`
+  img {
+    width: 100%;
+    border-radius: 8px;
+    padding-bottom: 3%;
+    box-shadow: 0 0 45px rgb(0 0 0 / 15%);
+  }
+  h2 {
+    font-size: 150%;
   }
 `;
