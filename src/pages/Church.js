@@ -23,22 +23,6 @@ const Church = () => {
           inspiring information from today's most important marriage
           professionals.
         </p>
-
-        <SimulcastSvg>
-          <svg
-            id="visual"
-            viewBox="0 0 1366 768"
-            width="100%"
-            height="768"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1">
-            <path
-              d="M0 95L45.5 90.2C91 85.3 182 75.7 273 79.5C364 83.3 455 100.7 546.2 98.7C637.3 96.7 728.7 75.3 819.8 63.8C911 52.3 1002 50.7 1093 57.3C1184 64 1275 79 1320.5 86.5L1366 94L1366 0L1320.5 0C1275 0 1184 0 1093 0C1002 0 911 0 819.8 0C728.7 0 637.3 0 546.2 0C455 0 364 0 273 0C182 0 91 0 45.5 0L0 0Z"
-              fill="#ffdd11"
-              stroke-linecap="round"
-              stroke-linejoin="miter"></path>
-          </svg>
-        </SimulcastSvg>
       </Simulcast>
       <Community>
         <h1>Marriage Project Now Community</h1>
@@ -47,38 +31,8 @@ const Church = () => {
           church or ministry. Create a robust, vibrant community that will have
           an influence on entire generations.
         </p>
-        <CommunitySvg>
-          <svg
-            id="visual"
-            viewBox="0 0 1366 768"
-            width="100%"
-            height="768"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1">
-            <path
-              d="M0 671L45.5 675.8C91 680.7 182 690.3 273 686.5C364 682.7 455 665.3 546.2 667.3C637.3 669.3 728.7 690.7 819.8 702.2C911 713.7 1002 715.3 1093 708.7C1184 702 1275 687 1320.5 679.5L1366 672L1366 769L1320.5 769C1275 769 1184 769 1093 769C1002 769 911 769 819.8 769C728.7 769 637.3 769 546.2 769C455 769 364 769 273 769C182 769 91 769 45.5 769L0 769Z"
-              fill="#ff9933"
-              stroke-linecap="round"
-              stroke-linejoin="miter"></path>
-          </svg>
-        </CommunitySvg>
       </Community>
       <Partners>
-        <PartnersSvg>
-          <svg
-            id="visual"
-            viewBox="0 0 1366 768"
-            width="100%"
-            height="768"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1">
-            <path
-              d="M0 95L45.5 90.2C91 85.3 182 75.7 273 79.5C364 83.3 455 100.7 546.2 98.7C637.3 96.7 728.7 75.3 819.8 63.8C911 52.3 1002 50.7 1093 57.3C1184 64 1275 79 1320.5 86.5L1366 94L1366 0L1320.5 0C1275 0 1184 0 1093 0C1002 0 911 0 819.8 0C728.7 0 637.3 0 546.2 0C455 0 364 0 273 0C182 0 91 0 45.5 0L0 0Z"
-              fill="#ff9933"
-              stroke-linecap="round"
-              stroke-linejoin="miter"></path>
-          </svg>
-        </PartnersSvg>
         <h1>Marriage Project Church Partners</h1>
         <p>
           We encourage healthy marriages in order to help congregations thrive.
@@ -132,7 +86,7 @@ const Simulcast = styled.div`
   margin-top: 15%;
   h1 {
     color: #000;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     padding-bottom: 3%;
   }
@@ -147,17 +101,7 @@ const Simulcast = styled.div`
   @media screen and (max-width: 768px) {
   }
 `;
-const SimulcastSvg = styled.div`
-  position: absolute;
-  z-index: 9;
-  top: 98%;
-  @media screen and (max-width: 768px) {
-    top: 27%;
-  }
-  @media screen and (max-width: 1365px) and (min-width: 1024px) {
-    top: 70%;
-  }
-`;
+
 const Community = styled.div`
   position: relative;
 
@@ -171,7 +115,7 @@ const Community = styled.div`
   h1 {
     font-size: 300%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
   }
   p {
     text-align: center;
@@ -182,33 +126,22 @@ const Community = styled.div`
     line-height: 200%;
   }
   @media screen and (max-width: 768px) {
-    height: 50vh;
     h1 {
       font-size: 200%;
       margin-bottom: 5%;
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 1365px) {
-    height: 35vh;
   }
 `;
-const CommunitySvg = styled.div`
-  position: absolute;
-  top: -25%;
-  @media screen and (max-width: 768px) {
-    top: -20%;
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1365px) {
-    top: -40%;
-  }
-`;
+
 const Partners = styled.div`
   position: relative;
   background-color: #f93;
   h1 {
     font-size: 300%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
   }
   p {
     text-align: center;
@@ -225,17 +158,7 @@ const Partners = styled.div`
     }
   }
 `;
-const PartnersSvg = styled.div`
-  position: absolute;
-  z-index: 9;
-  top: 95%;
-  @media screen and (max-width: 768px) {
-    top: 30%;
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1365px) {
-    top: 70%;
-  }
-`;
+
 const Wholesale = styled(Partners)`
   background-color: #fff;
   h1,

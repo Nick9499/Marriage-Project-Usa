@@ -11,9 +11,9 @@ const MarriageProjectPartner = () => {
   };
   return (
     <Partners>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} isOpen={isOpen} />
       <Banner>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} isOpen={isOpen} />
         <h2>Give</h2>
         <h1>Marriage Project Partner</h1>
       </Banner>
@@ -35,10 +35,7 @@ const MarriageProjectPartner = () => {
 export default MarriageProjectPartner;
 
 const Partners = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2021/03/priscilla-du-preez-rf5U-IXqxzg-unsplash-e1619798186563.jpg");
-  background-size: cover;
-  height: 70vh;
+  height: 100%;
   @media screen and (max-width: 768px) {
     height: 40vh;
   }
@@ -48,11 +45,15 @@ const Partners = styled.div`
 `;
 
 const Banner = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://xomarriage.com/wp-content/uploads/2021/03/priscilla-du-preez-rf5U-IXqxzg-unsplash-e1619798186563.jpg");
+  background-size: cover;
   h1 {
     padding-left: 7%;
     font-size: 300%;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
+    padding-bottom: 5%;
   }
   h2 {
     color: #ffd111;
@@ -73,6 +74,7 @@ const Become = styled.div`
     text-align: center;
     color: #000;
     padding-bottom: 3%;
+    font-weight: 500;
   }
   p {
     text-align: center;
@@ -83,6 +85,7 @@ const Become = styled.div`
     margin-top: 30%;
     h1 {
       font-size: 150%;
+      font-weight: 600;
     }
   }
 `;

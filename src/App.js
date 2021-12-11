@@ -17,6 +17,7 @@ import JobCenter from "./pages/JobCenter";
 import CreativeDirector from "./pages/CreativeDirector";
 import ProgramCordinator from "./pages/ProgramCordinator";
 import DataAnalyst from "./pages/DataAnalyst";
+import Podcast from "./pages/Podcast";
 
 const theme = createTheme({
   palette: {
@@ -31,51 +32,52 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route path='/' exact>
+          <Route path="/" exact>
             <Home />
           </Route>
-          <Route path='/about'>
+          <Route path="/about">
             <About />
           </Route>
-          <Route path='/conference'>
+          <Route path="/conference">
             <Conference />
           </Route>
-          <Route path='/marriagehelp'>
+          <Route path="/marriagehelp">
             <MarriageHelp />
           </Route>
-          <Route path='/referrals'>
+          <Route path="/referrals">
             <Referrals />
           </Route>
-          <Route path='/give'>
+          <Route path="/give">
             <Give />
           </Route>
-          <Route path='/marriageprojectpartners'>
+          <Route path="/marriageprojectpartners">
             <MarriageProjectPartner />
           </Route>
-          <Route path='/onetimegift'>
+          <Route path="/onetimegift">
             <OneTimeGift />
           </Route>
-          <Route path='/marriageprojectmentorprogram'>
+          <Route path="/marriageprojectmentorprogram">
             <MarriageProjectCenter />
           </Route>
-          <Route path='/churches'>
+          <Route path="/churches">
             <Church />
           </Route>
-          <Route path='/nowcommunity' component={NowCommunity} />
+          <Route path="/nowcommunity" component={NowCommunity} />
 
-          <Route path='/jobcenter' exact>
+          <Route path="/jobcenter" exact>
             <JobCenter />
           </Route>
 
           <Route
-            path='/jobcenter/creativedirector'
+            path="/jobcenter/creativedirector"
             component={CreativeDirector}
           />
           <Route
-            path='/jobcenter/programcordinator'
+            path="/jobcenter/programcordinator"
             component={ProgramCordinator}
           />
-          <Route path='/jobcenter/dataanalyst' component={DataAnalyst} />
+          <Route path="/jobcenter/dataanalyst" component={DataAnalyst} />
+          <Route path="/podcast" component={Podcast} />
         </Switch>
       </Router>
     </ThemeProvider>

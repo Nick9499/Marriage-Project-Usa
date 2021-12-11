@@ -21,8 +21,8 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarMenuWrapper>
             <SidebarMenu>
               <h4>Main Menu</h4>
-              <SidebarLink to="/about" onClick={toggle}>
-                About
+              <SidebarLink to="/podcast" onClick={toggle}>
+                Podcast
               </SidebarLink>
               <SidebarLink to="/conference" onClick={toggle}>
                 Conference
