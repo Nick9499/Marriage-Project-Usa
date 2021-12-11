@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
-import { Height } from "@material-ui/icons";
 
 const Podcast = () => {
   const [isOpen, setIsOpen] = useState(false);
