@@ -104,17 +104,20 @@ const PodcastSection = styled.div`
 `;
 
 const PodcastCardContainer = styled.div`
-  padding: 5%;
-  padding-bottom: 10%;
+  height: 100%;
+  padding: 10%;
+
   display: grid;
   grid-template-columns: 30% 30% 30%;
   gap: 5%;
   @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
+    margin-bottom: 250%;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     grid-template-columns: 50% 50%;
     padding: 8%;
+    margin-bottom: 30%;
   }
 `;
 const PodcastCard = styled.div`
