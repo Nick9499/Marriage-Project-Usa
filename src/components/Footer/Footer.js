@@ -12,7 +12,8 @@ const Footer = () => {
       <FooterTop>
         <h2>Happily ever-learning</h2>
         <h2 className="small">
-          Sign up for the XO Newsletter to receive weekly marriage advice.
+          Sign up for The Marriage Project Newsletter to receive weekly marriage
+          advice.
         </h2>
         <input type="text" placeholder="you@email.com" />
         <Button variant="contained">SEND</Button>
@@ -21,9 +22,13 @@ const Footer = () => {
         <Contact>
           <h5>Contact Us</h5>
           <p>
-            <a href="tel:123456789">123456789</a>
+            <a href="tel:877-557-2008">877-557-2008 Main/Fax</a>
           </p>
-          <p>info@marriageprojectusa</p>
+          <p>
+            <a href="mailto:info@themarriageproject.us">
+              info@themarriageproject.us
+            </a>
+          </p>
           <h5>Stay Connected</h5>
           <Socials>
             <span>
@@ -45,9 +50,10 @@ const Footer = () => {
         </Contact>
         <Give>
           <p>
-            Support Marriage Project's mission. It is possible to equip the next
-            generation for marriage success with a monthly contribution,
-            partnership or donation to the Marriage
+            The Marriage Project is a 501(c)3 non profit ministry supported by
+            donations. It is possible to equip the next generation for marriage
+            success with a monthly contribution, partnership or donation to the
+            Marriage Project. Please click GIVE below.
           </p>
           <Button
             variant="contained"
@@ -63,8 +69,7 @@ const Footer = () => {
       <FooterBottom>
         <small>Accredited by the ECFA Since 1996</small>
         <small>
-          © Copyright 2021 The Marriage Project. All rights reserved. Designed
-          by circles+co
+          © Copyright 2021 The Marriage Project. All rights reserved.
         </small>
       </FooterBottom>
     </FooterContaner>

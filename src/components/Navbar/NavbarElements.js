@@ -2,14 +2,16 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: ${({ isOpen }) => (isOpen ? "transparent" : "transparent")};
+  background: ${({ navbar }) => (navbar ? "#000" : "transparent")};
+  transition: background 1s;
   height: 80px;
   /* margin-top: -80px; */
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  width: 100%;
   top: 0;
   z-index: 10;
 
@@ -28,7 +30,7 @@ export const NavbarContainer = styled.div`
 `;
 export const NavLogo = styled(LinkR)`
   img {
-    width: 100%;
+    width: 90%;
     padding-top: 20%;
   }
 `;
