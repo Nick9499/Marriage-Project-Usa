@@ -97,9 +97,11 @@ const GiveContainer = styled.div`
 const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2021/05/shutterstock_548882503-scaled.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: 50% 20%;
   height: 100%;
+  padding-bottom: 10%;
 `;
 const Support = styled.div`
   text-align: center;

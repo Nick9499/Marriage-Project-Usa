@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
+import { Button, TextField } from "@material-ui/core";
 
 const OneTimeGift = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <OneTime>
       <Banner>
@@ -25,6 +29,25 @@ const OneTimeGift = () => {
           success in marriage. You may make a one-time gift by clicking the
           button below today!
         </h2>
+        <h3>Please fill the below form to donate</h3>
+        <Form>
+          <TextField
+            label="Name"
+            variant="outlined"
+            style={{ width: "40%", marginBottom: "2%" }}
+          />
+          <TextField
+            label="Phone Number"
+            variant="outlined"
+            style={{ width: "40%" }}
+          />
+          <Button
+            color="primary"
+            variant="contained"
+            style={{ marginTop: "2%" }}>
+            Send
+          </Button>
+        </Form>
       </One>
       <Footer />
     </OneTime>
@@ -79,6 +102,9 @@ const One = styled.div`
     text-align: center;
     font-size: 150%;
   }
+  h3 {
+    text-align: center;
+  }
   @media screen and (max-width: 768px) {
     h2 {
       font-size: 120%;
@@ -90,4 +116,11 @@ const One = styled.div`
       font-size: 130%;
     }
   }
+`;
+const Form = styled.div`
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;

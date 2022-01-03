@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -9,6 +9,9 @@ const MarriageProjectPartner = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Partners>
       <Banner>
@@ -34,20 +37,14 @@ const MarriageProjectPartner = () => {
 
 export default MarriageProjectPartner;
 
-const Partners = styled.div`
-  height: 100%;
-  @media screen and (max-width: 768px) {
-    height: 40vh;
-  }
-  @media screen and (max-width: 1366px) and (min-width: 1024px) {
-    height: 30vh;
-  }
-`;
+const Partners = styled.div``;
 
 const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2021/03/priscilla-du-preez-rf5U-IXqxzg-unsplash-e1619798186563.jpg");
-  background-size: cover;
+  background-size: 100%;
+  height: 100%;
+  background-position: 50% 20%;
   h1 {
     padding-left: 7%;
     font-size: 300%;
@@ -57,9 +54,10 @@ const Banner = styled.div`
   }
   h2 {
     color: #ffd111;
-    margin-left: 7%;
-    margin-top: 10%;
+    padding-left: 7%;
+    padding-top: 10%;
   }
+
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 200%;
@@ -67,7 +65,6 @@ const Banner = styled.div`
   }
 `;
 const Become = styled.div`
-  margin-top: 20%;
   h1 {
     font-size: 200%;
     margin-top: 10%;
