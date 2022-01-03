@@ -36,7 +36,7 @@ const Conference = styled.div`
     url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-03-e1610987925178.jpg");
   background-size: cover;
 
-  height: 100%;
+  height: 70%;
   h1 {
     color: #fff;
 
@@ -53,7 +53,7 @@ const Conference = styled.div`
   @media screen and (max-width: 768px) {
     background-size: 100% 90%;
     background-repeat: no-repeat;
-    /* height: 80vh; */
+    height: 100%;
     h1 {
       margin-top: 20%;
       font-size: 250%;
@@ -62,7 +62,7 @@ const Conference = styled.div`
   }
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     /* height: 70vh; */
-    background-size: 100% 70%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     h1 {
       padding-bottom: 6%;

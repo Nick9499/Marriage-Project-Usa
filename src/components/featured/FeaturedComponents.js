@@ -46,6 +46,9 @@ const Featured = styled.div`
     grid-template-columns: 100%;
     height: 170%;
   }
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    padding-bottom: 5%;
+  }
 `;
 
 const Image = styled.div`
