@@ -124,14 +124,14 @@ const Banner = styled.div`
   }
   @media screen and (max-width: 768px) {
     h1 {
-      margin-top: 10%;
+      padding-top: 30%;
       font-size: 200%;
       margin-bottom: 5%;
     }
   }
   @media screen and (max-width: 1365px) and (min-width: 1024px) {
     h1 {
-      margin-top: 5%;
+      padding-top: 20%;
       font-size: 250%;
       margin-bottom: 3%;
     }

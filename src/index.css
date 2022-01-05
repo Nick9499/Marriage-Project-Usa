@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: "Courier New", Courier, monospaces;
+  /* font-family: "Courier New", Courier, monospaces; */
+  font-family: "Criteria CF";
+  src: url("./fonts/Fontspring-DEMO-criteriacf-regular.otf");
 }
 
 code {
