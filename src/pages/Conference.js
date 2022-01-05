@@ -5,14 +5,13 @@ import SimpleAccordion from "../components/Accordion/Accordion";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
-import { useHistory } from "react-router";
 
 const Conference = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-  const history = useHistory();
+
   return (
     <ConferenceBody>
       <Sidebar isOpen={isOpen} toggle={toggle} />

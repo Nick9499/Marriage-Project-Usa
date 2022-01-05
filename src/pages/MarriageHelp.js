@@ -1,6 +1,6 @@
 import Button from "../components/Button/Button";
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -12,7 +12,6 @@ const MarriageHelp = () => {
     setIsOpen(!isOpen);
   };
 
-  const history = useHistory();
   return (
     <Marriage>
       <MarriageTitle>

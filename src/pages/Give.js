@@ -1,13 +1,12 @@
 import Button from "../components/Button/Button";
 import React, { useState } from "react";
-import { useHistory } from "react-router";
+
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
 
 const Give = () => {
-  const history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);

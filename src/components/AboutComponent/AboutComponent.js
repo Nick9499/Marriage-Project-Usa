@@ -1,10 +1,9 @@
 import Button from "../Button/Button";
 import React from "react";
-import { useHistory } from "react-router-dom";
+
 import styled from "styled-components";
 
 const AboutComponent = () => {
-  const history = useHistory();
   return (
     <About>
       <Image>

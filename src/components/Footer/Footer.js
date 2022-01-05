@@ -2,11 +2,10 @@ import Button from "../Button/Button";
 import React from "react";
 import styled from "styled-components";
 import { Facebook, Instagram, Twitter, YouTube } from "@material-ui/icons";
-import { useHistory } from "react-router";
+
 import logo from "../../images/logo.svg";
 
 const Footer = () => {
-  const history = useHistory();
   return (
     <FooterContaner>
       <FooterTop>
