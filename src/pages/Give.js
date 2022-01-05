@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import Button from "../components/Button/Button";
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import styled from "styled-components";
@@ -36,10 +36,7 @@ const Give = () => {
           Marriage Project to help families <br /> throughout the world find
           hope.
         </p>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => history.push("/marriageprojectpartners")}>
+        <Button url="/marriageprojectpartners" white>
           LEARN MORE
         </Button>
       </Partners>
@@ -51,12 +48,7 @@ const Give = () => {
           success in marriage. You may make a one-time gift by clicking the
           button below today!
         </p>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => history.push("/onetimegift")}>
-          GIVE TODAY!
-        </Button>
+        <Button url="/onetimegift">GIVE TODAY!</Button>
       </OneTime>
       <MarriageProject>
         <h1>Marriage Project Mentor program</h1>
@@ -65,10 +57,7 @@ const Give = () => {
           specialists that couples can turn to for practical, inspirational, and
           innovative methods to living a wonderful life of love.
         </p>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => history.push("/marriageprojectmentorprogram")}>
+        <Button white url="/marriageprojectmentorprogram">
           PARTNER WITH US
         </Button>
       </MarriageProject>
@@ -126,6 +115,7 @@ const Partners = styled.div`
   background-size: cover;
   height: 100%;
   background-blend-mode: darken;
+  padding-bottom: 5%;
   h1 {
     padding-top: 10%;
     text-align: center;
@@ -142,7 +132,7 @@ const Partners = styled.div`
   Button {
     margin-left: 45%;
     margin-top: 2%;
-    margin-bottom: 5%;
+
     z-index: 9;
   }
   @media screen and (max-width: 768px) {

@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
-import { Button, TextField } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
+import Button from "../components/Button/Button";
 
 const OneTimeGift = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,14 +40,9 @@ const OneTimeGift = () => {
           <TextField
             label="Phone Number"
             variant="outlined"
-            style={{ width: "40%" }}
+            style={{ width: "40%", marginBottom: "3%" }}
           />
-          <Button
-            color="primary"
-            variant="contained"
-            style={{ marginTop: "2%" }}>
-            Send
-          </Button>
+          <Button>Send</Button>
         </Form>
       </One>
       <Footer />

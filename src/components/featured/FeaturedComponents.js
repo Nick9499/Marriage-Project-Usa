@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from "@material-ui/core";
+import Button from "../Button/Button";
 import React from "react";
 import styled from "styled-components";
 
@@ -24,10 +24,7 @@ const FeaturedComponents = () => {
           Barbara restore their marriage, and how they continue to use their
           story to help other couples.
         </p>
-        <ButtonGroup variant="contained" color="primary">
-          <Button>READ MORE</Button>
-          <Button>VIEW ALL STORIES</Button>
-        </ButtonGroup>
+        <Button>Learn More</Button>
       </Content>
     </Featured>
   );

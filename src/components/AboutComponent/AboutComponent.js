@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import Button from "../Button/Button";
 import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
@@ -27,12 +27,14 @@ const AboutComponent = () => {
           is accomplished through the hosting of conferences, the creation of
           resources, and the provision of motivating digital content.
         </p>
-        <Button
+        {/* <Button
           variant="contained"
           color="primary"
           onClick={() => history.push("/about")}>
           LEARN MORE
-        </Button>
+        </Button> */}
+
+        <Button url="/about">Learn More</Button>
       </AboutContent>
     </About>
   );

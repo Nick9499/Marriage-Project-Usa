@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import Button from "../components/Button/Button";
 import React, { useState } from "react";
 import styled from "styled-components";
 import SimpleAccordion from "../components/Accordion/Accordion";
@@ -64,10 +64,7 @@ const Conference = () => {
           inspiring information from today's most important marriage
           professionals.
         </p>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => history.push("/churches")}>
+        <Button white url="/churches">
           LEARN MORE
         </Button>
       </Church>

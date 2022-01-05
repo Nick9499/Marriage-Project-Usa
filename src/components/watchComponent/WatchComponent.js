@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import Button from "../Button/Button";
 import React from "react";
 import styled from "styled-components";
 
@@ -13,9 +13,9 @@ const WatchComponent = () => {
         our Marriage Project <br />
         YouTube channel.
       </p>
-      <Button variant="contained" color="primary">
-        LEARN MORE
-      </Button>
+      <ButtonContainer>
+        <Button white>LEARN MORE</Button>
+      </ButtonContainer>
     </Watch>
   );
 };
@@ -43,6 +43,7 @@ const Watch = styled.div`
     line-height: 240%;
     margin-bottom: 5%;
   }
+
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 250%;
@@ -56,4 +57,10 @@ const Watch = styled.div`
   /*  @media screen and (min-width: 1024px) and (max-width: 1365px) {
     height: 40vh;
   } */
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 `;

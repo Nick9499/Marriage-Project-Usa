@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import Button from "../Button/Button";
 import React from "react";
 import styled from "styled-components";
 import { Facebook, Instagram, Twitter, YouTube } from "@material-ui/icons";
@@ -16,7 +16,9 @@ const Footer = () => {
           advice.
         </h2>
         <input type="text" placeholder="you@email.com" />
-        <Button variant="contained">SEND</Button>
+        <Button footer white>
+          SEND
+        </Button>
       </FooterTop>
       <FooterMid>
         <Contact>
@@ -55,10 +57,7 @@ const Footer = () => {
             success with a monthly contribution, partnership or donation to the
             Marriage Project. Please click GIVE below.
           </p>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => history.push("/give")}>
+          <Button footer url="/give" white>
             Give
           </Button>
         </Give>

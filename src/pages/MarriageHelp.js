@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import Button from "../components/Button/Button";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
@@ -51,12 +51,7 @@ const MarriageHelp = () => {
             For help in locating a screened Christian counselor, please contact
             one of our friends.
           </p>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => history.push("/referrals")}>
-            FIND REFERRALS
-          </Button>
+          <Button url="/referrals">FIND REFERRALS</Button>
         </ReferralsContent>
         <Image>
           <img

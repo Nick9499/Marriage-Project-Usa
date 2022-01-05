@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
-import { Button } from "@material-ui/core";
+import Button from "../components/Button/Button";
 
 const MarriageProjectCenter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +20,7 @@ const MarriageProjectCenter = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} isOpen={isOpen} />
         <h1> Marriage Project Mentor program</h1>
-        <Button variant="contained" color="primary">
-          Donate Us
-        </Button>
+        <Button white>Donate Us</Button>
       </Banner>
       <Difference>
         <h1> Marriage Project Mentor program</h1>
@@ -110,6 +108,7 @@ const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-05.jpg");
   background-size: cover;
+  padding-bottom: 1%;
   height: 200%;
   h1 {
     padding: 7%;

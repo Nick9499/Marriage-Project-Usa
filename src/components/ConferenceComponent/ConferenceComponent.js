@@ -1,7 +1,7 @@
-import { Button } from "@material-ui/core";
 import React from "react";
 import { useHistory } from "react-router";
 import styled from "styled-components";
+import Button from "../Button/Button";
 
 const ConferenceComponent = () => {
   const history = useHistory();
@@ -16,11 +16,9 @@ const ConferenceComponent = () => {
           <br />
           should be, with love, laughter and purpose.
         </p>
-        <Button
-          color="primary"
-          variant="contained"
-          onClick={() => history.push("/conference")}>
-          LEARN MORE
+        {/*  <button onClick={() => history.push("/conference")}>LEARN MORE</button> */}
+        <Button white url="/conference">
+          Learn More
         </Button>
       </Conference>
     </>
