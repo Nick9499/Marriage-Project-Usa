@@ -47,7 +47,7 @@ const Conference = () => {
         </Body>
         <Image>
           <img
-            src="https://xomarriage.com/wp-content/uploads/2021/03/Screen-Shot-2021-03-01-at-1.15.39-PM.png"
+            src="https://media.istockphoto.com/photos/and-then-you-came-along-and-turned-my-life-around-picture-id1300273437?b=1&k=20&m=1300273437&s=170667a&w=0&h=aBUwwJX9_OCJGcMnvbRpMo39AD3EHUbfsabWjs2iD4I="
             alt="img4"
           />
         </Image>

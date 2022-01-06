@@ -30,8 +30,9 @@ const Conference = styled.div`
   position: relative;
   padding: 10%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-03-e1610987925178.jpg");
+    url("https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80");
   background-size: cover;
+  background-position: 50% 30%;
 
   height: 70%;
   h1 {

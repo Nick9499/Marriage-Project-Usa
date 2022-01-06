@@ -190,7 +190,7 @@ const OneTime = styled.div`
 
 const MarriageProject = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-05.jpg");
+    url("https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-size: cover;
   height: 90vh;
   h1 {
