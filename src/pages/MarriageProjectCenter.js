@@ -31,7 +31,7 @@ const MarriageProjectCenter = () => {
         </p>
         <Image>
           <img
-            src="https://xomarriage.com/wp-content/uploads/2020/12/marriage-center-860x600.jpg"
+            src="https://images.unsplash.com/photo-1509845350455-fb0c36048db1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             alt="img6"
           />
         </Image>
@@ -106,7 +106,7 @@ const MarriageCenter = styled.div`
 `;
 const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-05.jpg");
+    url("https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
   background-size: cover;
   padding-bottom: 1%;
   height: 200%;
