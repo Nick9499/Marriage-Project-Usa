@@ -85,6 +85,14 @@ const Banner = styled.div`
     h1 {
       font-size: 250%;
     }
+    h2 {
+      padding-top: 100px;
+    }
+  }
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
+    h2 {
+      padding-top: 100px;
+    }
   }
 `;
 const One = styled.div`
@@ -105,9 +113,10 @@ const One = styled.div`
     h2 {
       font-size: 120%;
       padding: 10%;
+      font-weight: 500;
     }
   }
-  @media screen and (max-width: 1365px) and (min-width: 1024px) {
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
     h2 {
       font-size: 130%;
     }

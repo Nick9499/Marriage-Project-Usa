@@ -76,10 +76,14 @@ const GiveContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     h1 {
+      padding-top: 100px;
       font-size: 250%;
     }
   }
   @media screen and (max-width: 1365px) and (min-width: 768px) {
+    h1 {
+      padding-top: 100px;
+    }
   }
 `;
 const Banner = styled.div`

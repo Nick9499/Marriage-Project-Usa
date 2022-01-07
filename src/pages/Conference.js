@@ -89,8 +89,9 @@ const ConferenceBody = styled.div`
   @media screen and (max-width: 768px) {
     height: 150vh;
     h1 {
-      font-size: 200%;
+      font-size: 300%;
       margin-bottom: 5%;
+      padding-top: 100px;
     }
     background-size: contain;
   }

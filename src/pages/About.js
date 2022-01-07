@@ -90,9 +90,12 @@ const AboutContainer = styled.div`
     padding: 10%;
   }
   @media screen and (max-width: 768px) {
-    height: 100vh;
     background-size: 100% 60%;
     background-repeat: no-repeat;
+    h1 {
+      padding-top: 30%;
+      font-size: 300%;
+    }
   }
 `;
 const Mission = styled.div`

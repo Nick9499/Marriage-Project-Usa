@@ -42,6 +42,7 @@ const AboutComponent = () => {
 export default AboutComponent;
 
 const About = styled.div`
+  height: 100%;
   margin-top: 14%;
   background: #f8e71c;
   display: grid;
@@ -78,7 +79,7 @@ const Image = styled.div`
 `;
 
 const AboutContent = styled.div`
-  margin-bottom: 5%;
+  padding-bottom: 5%;
   padding: 5%;
   h1 {
     font-weight: 500;

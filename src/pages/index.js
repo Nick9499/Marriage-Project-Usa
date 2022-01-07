@@ -52,7 +52,7 @@ const HomeContainer = styled.div`
 `;
 const Hero = styled.div`
   position: relative;
-  padding-top: 7%;
+  padding-top: 10%;
   padding-left: 10%;
   padding-bottom: 0%;
   h1 {
@@ -66,9 +66,14 @@ const Hero = styled.div`
     font-weight: 400;
   }
   @media screen and (max-width: 768px) {
+    padding-top: 100px;
     h1 {
-      font-size: 170%;
+      font-size: 150%;
       padding-bottom: 5%;
+    }
+    p {
+      font-size: 90%;
+      padding: 1%;
     }
   }
 `;

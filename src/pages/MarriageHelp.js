@@ -74,15 +74,17 @@ const Marriage = styled.div`
     font-weight: 500;
   }
   @media screen and (max-width: 768px) {
-    background-size: 140%;
     height: 140%;
     background-repeat: no-repeat;
     h1 {
-      font-size: 250%;
+      padding-top: 100px;
+      font-size: 300%;
     }
   }
-  @media screen and (min-width: 1024px) and (max-width: 1365px) {
-    /*  background-size: 100% 100%; */
+  @media screen and (min-width: 769px) and (max-width: 1365px) {
+    h1 {
+      padding-top: 120px;
+    }
   }
 `;
 
@@ -92,6 +94,9 @@ const MarriageTitle = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   height: 140%;
+  @media screen and (max-width: 768px) {
+    background-size: 100% 100%;
+  }
 `;
 
 const Desc = styled.div`

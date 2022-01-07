@@ -49,9 +49,9 @@ const Watch = styled.div`
       text-align: right;
       margin-top: 15%;
     }
-    p {
+    /* p {
       text-align: left;
-    }
+    } */
   }
   /*  @media screen and (min-width: 1024px) and (max-width: 1365px) {
     height: 40vh;

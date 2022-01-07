@@ -62,6 +62,9 @@ const Banner = styled.div`
     h1 {
       font-size: 200%;
     }
+    h2 {
+      padding-top: 100px;
+    }
   }
 `;
 const Become = styled.div`

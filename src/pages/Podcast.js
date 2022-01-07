@@ -62,14 +62,16 @@ const Banner = styled.div`
   h1 {
     color: #fff;
     font-weight: 500;
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-left: 10%;
+    padding-top: 10%;
     padding-bottom: 10%;
     font-size: 400%;
   }
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 250%;
+      padding-top: 20%;
+      padding-left: 10%;
       padding-bottom: 20%;
     }
   }

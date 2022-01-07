@@ -71,10 +71,16 @@ const ChurchContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 200%;
+      padding-top: 100px;
+      font-size: 300%;
     }
     p {
       font-weight: normal;
+    }
+    @media screen and (max-width: 1365px) and (min-width: 769px) {
+      h1 {
+        padding-top: 100px;
+      }
     }
   }
 `;

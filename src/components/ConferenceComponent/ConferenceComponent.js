@@ -27,6 +27,7 @@ const ConferenceComponent = () => {
 export default ConferenceComponent;
 
 const Conference = styled.div`
+  margin-top: -7%;
   position: relative;
   padding: 10%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
