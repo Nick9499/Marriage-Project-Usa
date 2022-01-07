@@ -20,9 +20,9 @@ const FeaturedComponents = () => {
           cracks culminated into a crisis in their marriage and ministry.
         </p>
         <p>
-          Read about how a vision retreat and XO resources helped Kevin and
-          Barbara restore their marriage, and how they continue to use their
-          story to help other couples.
+          Read about how a vision retreat and Marriage Project resources helped
+          Kevin and Barbara restore their marriage, and how they continue to use
+          their story to help other couples.
         </p>
         <Button>Learn More</Button>
       </Content>
