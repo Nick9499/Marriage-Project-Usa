@@ -7,10 +7,9 @@ const WatchComponent = () => {
     <Watch>
       <h1>Watch</h1>
       <p>
-        Watch encouraging video content from leading marriage experts like Jimmy{" "}
+        Watch encouraging video content from leading marriage experts like Eddie{" "}
         <br />
-        Evans, Dave and Ashley Willis and more, on Marriage Project Now Now and
-        our Marriage Project <br />
+        Riverra and others, on our Marriage Project <br />
         YouTube channel.
       </p>
       <ButtonContainer>

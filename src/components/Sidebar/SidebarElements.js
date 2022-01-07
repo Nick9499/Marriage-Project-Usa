@@ -111,11 +111,12 @@ export const ContactLink = styled.div`
 `;
 
 export const Socials = styled.div`
-  margin-top: 20%;
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
   font-size: 160%;
   font-weight: bolder;
+  margin-left: -20%;
   span {
     padding-left: 20%;
     &:hover {

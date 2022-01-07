@@ -52,12 +52,14 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarMenu>
               <h4>Contact Us</h4>
               <ContactLink onClick={toggle}>
-                <a href="tel:1234567890" className="links">
-                  1234567890
+                <a href="tel:877-557-2008" className="links">
+                  877-557-2008
                 </a>
               </ContactLink>
               <ContactLink onClick={toggle}>
-                <a href="mailto:info@lol.com">info@lol.com</a>
+                <a href="mailto:info@themarriageproject.us" className="links">
+                  info@themarriageproject.us
+                </a>
               </ContactLink>
 
               <Socials>
