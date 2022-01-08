@@ -18,7 +18,7 @@ const About = () => {
         <h1>About</h1>
       </Banner>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-bottom-1641635211">
+        <div className="custom-shape-divider-bottom-1641635211">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ const About = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>
@@ -39,13 +39,14 @@ const About = () => {
           encouraging digital content.
         </p>
         <p>
-          Our world-class speakers offer leading marriage advice to equip <br />
+          Our world-className speakers offer leading marriage advice to equip{" "}
+          <br />
           couples with the necessary tools for a successful marriage. We believe{" "}
           that every marriage can thrive.
         </p>
       </Mission>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-top-1641635920">
+        <div className="custom-shape-divider-top-1641635920">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +54,7 @@ const About = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>
@@ -69,7 +70,7 @@ const About = () => {
         </p>
       </Vision>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-bottom-1641636156">
+        <div className="custom-shape-divider-bottom-1641636156">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +78,7 @@ const About = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>

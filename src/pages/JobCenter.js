@@ -19,24 +19,22 @@ const JobCenter = () => {
       <h1>Job Center</h1>
       <Offer>
         <h2>
-          We offer a unique opportunity to be part of a world-class marriage
+          We offer a unique opportunity to be part of a world-className marriage
           ministry where your skills, talents and passions meet.
         </h2>
         <OfferSvg>
           <svg
-            id='visual'
-            viewBox='0 0 1366 768'
-            width='100%'
-            height='768'
-            xmlns='http://www.w3.org/2000/svg'
-            version='1.1'
-          >
+            id="visual"
+            viewBox="0 0 1366 768"
+            width="100%"
+            height="768"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1">
             <path
-              d='M0 98L25.3 94.5C50.7 91 101.3 84 152 81.2C202.7 78.3 253.3 79.7 303.8 80.5C354.3 81.3 404.7 81.7 455.2 84.5C505.7 87.3 556.3 92.7 607 95.5C657.7 98.3 708.3 98.7 759 97.8C809.7 97 860.3 95 910.8 89.8C961.3 84.7 1011.7 76.3 1062.2 70C1112.7 63.7 1163.3 59.3 1214 61C1264.7 62.7 1315.3 70.3 1340.7 74.2L1366 78L1366 0L1340.7 0C1315.3 0 1264.7 0 1214 0C1163.3 0 1112.7 0 1062.2 0C1011.7 0 961.3 0 910.8 0C860.3 0 809.7 0 759 0C708.3 0 657.7 0 607 0C556.3 0 505.7 0 455.2 0C404.7 0 354.3 0 303.8 0C253.3 0 202.7 0 152 0C101.3 0 50.7 0 25.3 0L0 0Z'
-              fill='#f7902e'
-              stroke-linecap='round'
-              stroke-linejoin='miter'
-            ></path>
+              d="M0 98L25.3 94.5C50.7 91 101.3 84 152 81.2C202.7 78.3 253.3 79.7 303.8 80.5C354.3 81.3 404.7 81.7 455.2 84.5C505.7 87.3 556.3 92.7 607 95.5C657.7 98.3 708.3 98.7 759 97.8C809.7 97 860.3 95 910.8 89.8C961.3 84.7 1011.7 76.3 1062.2 70C1112.7 63.7 1163.3 59.3 1214 61C1264.7 62.7 1315.3 70.3 1340.7 74.2L1366 78L1366 0L1340.7 0C1315.3 0 1264.7 0 1214 0C1163.3 0 1112.7 0 1062.2 0C1011.7 0 961.3 0 910.8 0C860.3 0 809.7 0 759 0C708.3 0 657.7 0 607 0C556.3 0 505.7 0 455.2 0C404.7 0 354.3 0 303.8 0C253.3 0 202.7 0 152 0C101.3 0 50.7 0 25.3 0L0 0Z"
+              fill="#f7902e"
+              stroke-linecap="round"
+              stroke-linejoin="miter"></path>
           </svg>
         </OfferSvg>
       </Offer>
@@ -48,10 +46,9 @@ const JobCenter = () => {
             <h4>Posted on october 15,2021</h4>
           </Name>
           <Button
-            variant='contained'
-            color='primary'
-            onClick={() => history.push("/jobcenter/creativedirector")}
-          >
+            variant="contained"
+            color="primary"
+            onClick={() => history.push("/jobcenter/creativedirector")}>
             Job Details
           </Button>
         </Job>
@@ -62,10 +59,9 @@ const JobCenter = () => {
             <h4>Posted on october 15,2021</h4>
           </Name>
           <Button
-            variant='contained'
-            color='primary'
-            onClick={() => history.push("/jobcenter/programcordinator")}
-          >
+            variant="contained"
+            color="primary"
+            onClick={() => history.push("/jobcenter/programcordinator")}>
             Job Details
           </Button>
         </Job>
@@ -76,10 +72,9 @@ const JobCenter = () => {
             <h4>Posted on october 15,2021</h4>
           </Name>
           <Button
-            variant='contained'
-            color='primary'
-            onClick={() => history.push("/jobcenter/dataanalyst")}
-          >
+            variant="contained"
+            color="primary"
+            onClick={() => history.push("/jobcenter/dataanalyst")}>
             Job Details
           </Button>
         </Job>

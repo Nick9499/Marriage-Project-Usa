@@ -21,7 +21,7 @@ const Conference = () => {
         <h1>Conference</h1>
       </Banner>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-bottom-1641639107">
+        <div className="custom-shape-divider-bottom-1641639107">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const Conference = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>
@@ -48,7 +48,7 @@ const Conference = () => {
         </p>
       </Invest>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-top-1641639238">
+        <div className="custom-shape-divider-top-1641639238">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Conference = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>
@@ -82,7 +82,7 @@ const Conference = () => {
         </Image>
       </Expect>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-top-1641639909">
+        <div className="custom-shape-divider-top-1641639909">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ const Conference = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>
@@ -105,12 +105,14 @@ const Conference = () => {
           inspiring information from today's most important marriage
           professionals.
         </p>
-        <Button white url="/churches">
-          LEARN MORE
-        </Button>
+        <div className="btn-container">
+          <Button white url="/churches">
+            LEARN MORE
+          </Button>
+        </div>
       </Church>
       <section style={{ position: "relative" }}>
-        <div class="custom-shape-divider-bottom-1641646172">
+        <div className="custom-shape-divider-bottom-1641646172">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +120,7 @@ const Conference = () => {
             preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"></path>
+              className="shape-fill"></path>
           </svg>
         </div>
       </section>

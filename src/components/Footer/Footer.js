@@ -98,7 +98,6 @@ const FooterTop = styled.div`
     padding: 1%;
     outline: none;
     width: 25%;
-    @me;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
