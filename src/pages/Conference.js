@@ -5,6 +5,7 @@ import SimpleAccordion from "../components/Accordion/Accordion";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
+import "./conference.css";
 
 const Conference = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,22 @@ const Conference = () => {
     <ConferenceBody>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} isOpen={isOpen} />
-      <h1>Conference</h1>
+      <Banner>
+        <h1>Conference</h1>
+      </Banner>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-bottom-1641639107">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <Invest>
         <h1>Investing in your marriage</h1>
         <p>
@@ -31,6 +47,19 @@ const Conference = () => {
           for each other.
         </p>
       </Invest>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-top-1641639238">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <Expect>
         <Body>
           <h1>What to Expect</h1>
@@ -52,6 +81,19 @@ const Conference = () => {
           />
         </Image>
       </Expect>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-top-1641639909">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <Church>
         <h1>
           Looking to host at your <br /> Church or Community organization?
@@ -67,6 +109,19 @@ const Conference = () => {
           LEARN MORE
         </Button>
       </Church>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-bottom-1641646172">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <SimpleAccordion />
       <Footer />
     </ConferenceBody>
@@ -76,12 +131,7 @@ const Conference = () => {
 export default Conference;
 
 const ConferenceBody = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2021/04/XOdayone031-1-scaled.jpg");
-  background-size: cover;
-  height: 85vh;
-
-  h1 {
+  /* h1 {
     color: #fff;
     padding: 10%;
     font-size: 400%;
@@ -97,6 +147,30 @@ const ConferenceBody = styled.div`
   }
   @media screen and (max-width: 1365px) and (min-width: 768px) {
     background-size: contain;
+  } */
+`;
+const Banner = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://xomarriage.com/wp-content/uploads/2021/04/XOdayone031-1-scaled.jpg");
+  background-size: cover;
+  height: 400px;
+  background-position: 50% 30%;
+  h1 {
+    color: #fff;
+    padding: 10%;
+    font-size: 400%;
+  }
+  @media screen and (max-width: 768px) {
+    height: 250px;
+    h1 {
+      font-size: 300%;
+      padding-top: 100px;
+    }
+  }
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
+    h1 {
+      padding-top: 150px;
+    }
   }
 `;
 const Invest = styled.div`
@@ -106,6 +180,7 @@ const Invest = styled.div`
   h1 {
     text-align: center;
     padding-bottom: 3%;
+    color: #fff;
   }
   p {
     text-align: center;
@@ -116,7 +191,6 @@ const Invest = styled.div`
     padding-bottom: 3%;
   }
   @media screen and (max-width: 768px) {
-    margin-top: 20%;
     height: 60%;
     h1 {
       font-size: 200%;
@@ -137,13 +211,20 @@ const Expect = styled.div`
   position: relative;
   padding: 5%;
   background-color: #fc9e49;
-  height: 120%;
+  height: 700px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 5%;
+  h1 {
+    padding-top: 200px;
+    padding-bottom: 40px;
+    color: #fff;
+  }
   @media screen and (max-width: 768px) {
+    height: 1070px;
     h1 {
       font-size: 200%;
+      padding-top: 100px;
       margin-bottom: 5%;
     }
     grid-template-columns: 100%;
@@ -154,7 +235,11 @@ const Expect = styled.div`
       padding-bottom: 5%;
     }
   }
-  @media screen and (max-width: 1365px) and (min-width: 768px) {
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
+    h1 {
+      padding-top: 70px;
+    }
+    height: 600px;
   }
 `;
 
@@ -182,28 +267,28 @@ const Image = styled.div`
 const Church = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2020/10/home-image-06.png");
-  height: 100%;
+  height: 600px;
   background-size: cover;
+
   h1 {
-    margin-bottom: 0;
+    color: #fff;
+    padding-top: 150px;
+    padding-left: 10%;
     font-size: 300%;
   }
   p {
-    margin-top: -7%;
+    padding-top: 40px;
     color: #fff;
     padding-left: 10%;
     padding-right: 10%;
     font-weight: bold;
     line-height: 240%;
   }
-  Button {
-    margin-left: 10%;
-    margin-top: 5%;
-  }
+
   @media screen and (max-width: 768px) {
+    height: 700px;
     h1 {
-      padding-top: 15%;
-      font-size: 150%;
+      font-size: 200%;
       margin-bottom: 5%;
     }
     p {

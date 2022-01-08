@@ -12,6 +12,12 @@ code {
 .shape-fill {
   fill: #4a90e2;
 }
+.shape-fill-home {
+  fill: #f8e71c;
+}
+.shape-fill-about {
+  fill: #f8e71c;
+}
 a:hover {
   color: #007bc6;
   transition: all 1s;
@@ -21,9 +27,24 @@ a:hover {
   padding: 0%;
   margin: 0%;
 }
-.shape-fill-home {
-  fill: #f8e71c;
+.custom-shape-divider-bottom-1641632424 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
-.shape-fill-about {
+
+.custom-shape-divider-bottom-1641632424 svg {
+  position: relative;
+  display: block;
+  width: calc(258% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1641632424 .shape-fill {
   fill: #f8e71c;
 }

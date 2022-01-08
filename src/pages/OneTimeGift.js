@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
 import { TextField } from "@material-ui/core";
 import Button from "../components/Button/Button";
+import "./oneTimeGift.css";
 
 const OneTimeGift = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,19 @@ const OneTimeGift = () => {
         <h2>Give</h2>
         <h1>One-Time Gift</h1>
       </Banner>
-
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-bottom-1641661408">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <One>
         <h2>
           When you donate to the Marriage Project, you're investing in your own
@@ -35,12 +48,14 @@ const OneTimeGift = () => {
           <TextField
             label="Name"
             variant="outlined"
-            style={{ width: "40%", marginBottom: "2%" }}
+            className="input"
+            style={{ marginBottom: "3%" }}
           />
           <TextField
             label="Phone Number"
             variant="outlined"
-            style={{ width: "40%", marginBottom: "3%" }}
+            className="input"
+            style={{ marginBottom: "3%" }}
           />
           <Button>Send</Button>
         </Form>
@@ -52,19 +67,12 @@ const OneTimeGift = () => {
 
 export default OneTimeGift;
 
-const OneTime = styled.div`
-  height: 100%;
-  @media screen and (max-width: 768px) {
-    height: 30vh;
-  }
-  @media screen and (max-width: 1365px) and (min-width: 1024px) {
-    height: 25vh;
-  }
-`;
+const OneTime = styled.div``;
 const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2021/01/give-1.jpg");
   background-size: cover;
+  height: 400px;
   h1 {
     padding-left: 6%;
     padding-top: 2%;
@@ -82,6 +90,8 @@ const Banner = styled.div`
     padding-bottom: 0%;
   }
   @media screen and (max-width: 768px) {
+    background-size: 100% 100%;
+    height: 300px;
     h1 {
       font-size: 250%;
     }
@@ -97,7 +107,6 @@ const Banner = styled.div`
 `;
 const One = styled.div`
   position: relative;
-  margin-top: 10%;
 
   h2 {
     padding: 3%;
@@ -112,7 +121,7 @@ const One = styled.div`
   @media screen and (max-width: 768px) {
     h2 {
       font-size: 120%;
-      padding: 10%;
+      /*  padding: 10%; */
       font-weight: 500;
     }
   }

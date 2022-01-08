@@ -27,7 +27,6 @@ const ConferenceComponent = () => {
 export default ConferenceComponent;
 
 const Conference = styled.div`
-  margin-top: -7%;
   position: relative;
   padding: 10%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
@@ -35,8 +34,9 @@ const Conference = styled.div`
   background-size: cover;
   background-position: 50% 30%;
 
-  height: 70%;
+  height: 700px;
   h1 {
+    padding-top: 100px;
     color: #fff;
 
     padding-bottom: 2%;
@@ -50,11 +50,10 @@ const Conference = styled.div`
     margin-bottom: 5%;
   }
   @media screen and (max-width: 768px) {
-    background-size: 100% 90%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100%;
+
     h1 {
-      margin-top: 20%;
       font-size: 250%;
       padding-bottom: 10%;
     }

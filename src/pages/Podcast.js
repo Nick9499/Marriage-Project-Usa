@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
 import axios from "axios";
+import "./podcast.css";
 
 const Podcast = () => {
   const url = `https://cdn.contentful.com/spaces/nxaaw3hc8jri/environments/master/entries?access_token=B7oUkHVltX7AD4UqADE5our_k21roblLdzizAWczntE`;
@@ -26,12 +27,38 @@ const Podcast = () => {
         <Navbar toggle={toggle} isOpen={isOpen} />
         <h1>Podcast</h1>
       </Banner>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-bottom-1641663380">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <PodcastSection>
         <h1>The Marriage Project Partner Podcast Network</h1>
         <h2>
           Listen to weekly relationship advice from leading marriage experts!
         </h2>
       </PodcastSection>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-top-1641663448">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <PodcastCardContainer>
         {data &&
           data.map((item, index) => (
@@ -58,7 +85,7 @@ const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2021/02/network.jpg");
   background-size: cover;
-  height: 100%;
+  height: 400px;
   h1 {
     color: #fff;
     font-weight: 500;
@@ -68,9 +95,10 @@ const Banner = styled.div`
     font-size: 400%;
   }
   @media screen and (max-width: 768px) {
+    height: 350px;
     h1 {
       font-size: 250%;
-      padding-top: 20%;
+      padding-top: 100px;
       padding-left: 10%;
       padding-bottom: 20%;
     }
@@ -78,6 +106,8 @@ const Banner = styled.div`
 `;
 const PodcastSection = styled.div`
   background-color: #087dc2;
+  height: 200px;
+
   h1 {
     color: #fff;
     padding-top: 5%;
@@ -94,6 +124,7 @@ const PodcastSection = styled.div`
     text-align: center;
   }
   @media screen and (max-width: 768px) {
+    height: 160px;
     h1 {
       padding-top: 10%;
       font-size: 150%;
@@ -108,6 +139,7 @@ const PodcastSection = styled.div`
 const PodcastCardContainer = styled.div`
   height: 100%;
   padding: 10%;
+  padding-top: 150px;
 
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -116,10 +148,11 @@ const PodcastCardContainer = styled.div`
     grid-template-columns: 100%;
     margin-bottom: 250%;
   }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     grid-template-columns: 50% 50%;
     padding: 8%;
     margin-bottom: 30%;
+    padding-top: 200px;
   }
 `;
 const PodcastCard = styled.div`

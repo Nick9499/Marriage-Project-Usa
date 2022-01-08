@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
+import "./about.css";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,22 @@ const About = () => {
     <AboutContainer>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} isOpen={isOpen} />
-      <h1>About</h1>
+      <Banner>
+        <h1>About</h1>
+      </Banner>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-bottom-1641635211">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <Mission>
         <h1>Our Mission</h1>
         <p>
@@ -28,6 +44,19 @@ const About = () => {
           that every marriage can thrive.
         </p>
       </Mission>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-top-1641635920">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <Vision>
         <h1>Our Vision</h1>
         <p>
@@ -39,6 +68,19 @@ const About = () => {
           training.
         </p>
       </Vision>
+      <section style={{ position: "relative" }}>
+        <div class="custom-shape-divider-bottom-1641636156">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
       <History>
         <h1>Our History</h1>
         <HistoryList>
@@ -80,11 +122,7 @@ const About = () => {
 export default About;
 
 const AboutContainer = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2021/01/who.jpg");
-  height: 100%;
-  background-size: contain;
-  h1 {
+  /*  h1 {
     font-size: 400%;
     color: #fff;
     padding: 10%;
@@ -96,6 +134,19 @@ const AboutContainer = styled.div`
       padding-top: 30%;
       font-size: 300%;
     }
+  } */
+`;
+const Banner = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://xomarriage.com/wp-content/uploads/2021/01/who.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 30%;
+  h1 {
+    font-size: 400%;
+    color: #fff;
+    padding-left: 10%;
+    padding-top: 100px;
   }
 `;
 const Mission = styled.div`
@@ -105,6 +156,7 @@ const Mission = styled.div`
   text-align: center;
   h1 {
     padding: 5%;
+    color: #fff;
   }
   p {
     color: #fff;
@@ -114,7 +166,7 @@ const Mission = styled.div`
   }
   @media screen and (max-width: 767px) {
     position: relative;
-    margin-top: 20%;
+
     padding-top: 15%;
     height: 110%;
     h1 {
@@ -136,19 +188,22 @@ const Mission = styled.div`
 const Vision = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://xomarriage.com/wp-content/uploads/2020/11/about-parallax-bg-01.png");
-  height: 100%;
+  height: 700px;
   text-align: center;
+  padding-top: 100px;
   h1 {
     padding: 5%;
+    padding-top: 100px;
+    color: #fff;
   }
   p {
     color: #fff;
     font-weight: bold;
     line-height: 240%;
-    padding-bottom: 3%;
+    padding-bottom: 100px;
   }
   @media screen and (max-width: 768px) {
-    /* height: 50vh; */
+    height: 750px;
     position: relative;
     padding-top: 15%;
     h1 {
@@ -159,7 +214,6 @@ const Vision = styled.div`
       padding-left: 10%;
       padding-right: 10%;
       text-align: justify;
-      padding-bottom: 10%;
     }
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -167,7 +221,7 @@ const Vision = styled.div`
   background-size: cover;
   @media screen and (max-width: 1365px) and (min-width: 768px) {
     /* height: 40vh; */
-    padding-bottom: 10%;
+    height: 600px;
   }
 `;
 

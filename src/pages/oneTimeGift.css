@@ -1,0 +1,34 @@
+.custom-shape-divider-bottom-1641661408 {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1641661408 svg {
+  position: relative;
+  display: block;
+  width: calc(216% + 1.3px);
+  height: 136px;
+}
+
+.custom-shape-divider-bottom-1641661408 .shape-fill {
+  fill: #ffffff;
+}
+.input {
+  width: 40%;
+}
+@media screen and (max-width: 1365px) and (min-width: 769px) {
+  .input {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}

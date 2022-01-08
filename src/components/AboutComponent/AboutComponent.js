@@ -42,16 +42,18 @@ const AboutComponent = () => {
 export default AboutComponent;
 
 const About = styled.div`
-  height: 100%;
-  margin-top: 14%;
+  height: 600px;
+  margin-top: -1%;
   background: #f8e71c;
   display: grid;
   grid-template-columns: 60% 40%;
 
   @media screen and (max-width: 767px) {
+    height: 800px;
     grid-template-columns: 100%;
     padding-bottom: -20%;
-    margin-top: 30%;
+    /* margin-top: 30%; */
+    margin-bottom: -5%;
   }
 
   position: relative;
@@ -79,7 +81,7 @@ const Image = styled.div`
 `;
 
 const AboutContent = styled.div`
-  padding-bottom: 5%;
+  padding-bottom: 20%;
   padding: 5%;
   h1 {
     font-weight: 500;
@@ -89,7 +91,7 @@ const AboutContent = styled.div`
   p {
     font-weight: bold;
     line-height: 240%;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
   }
   @media screen and (max-width: 767px) {
     h1 {

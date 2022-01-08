@@ -94,8 +94,11 @@ const FooterTop = styled.div`
     padding-right: 3%;
   }
   input {
+    margin-right: 4px;
     padding: 1%;
     outline: none;
+    width: 25%;
+    @me;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -109,9 +112,11 @@ const FooterTop = styled.div`
     input {
       padding: 5%;
       margin-bottom: 5%;
+      width: 100%;
     }
     Button {
       margin-bottom: 10% !important;
+      width: 100%;
     }
   }
 `;
