@@ -121,9 +121,8 @@ export const Socials = styled.div`
   justify-content: space-around;
   font-size: 160%;
   font-weight: bolder;
-  margin-left: -20%;
+  margin-left: -25px;
   span {
-    padding-left: 20%;
     &:hover {
       color: #007bc6;
       transition: all 0.7s;
