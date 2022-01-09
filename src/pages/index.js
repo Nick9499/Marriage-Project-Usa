@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -13,6 +13,9 @@ const Home = () => {
   const toggle = () => {
     setIsOpen((val) => !val);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <HomeContainer>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -110,19 +113,21 @@ const Hero = styled.div`
     font-weight: 500;
   }
   p {
-    padding-top: 4%;
+    font-size: 120%;
+    padding-top: 30px;
     color: #fff;
     font-weight: 400;
     padding-bottom: 100px;
   }
   @media screen and (max-width: 768px) {
+    background-size: 100% 100%;
     padding-top: 100px;
     h1 {
-      font-size: 150%;
+      font-size: 200%;
       padding-bottom: 5%;
     }
     p {
-      font-size: 90%;
+      font-size: 120%;
     }
   }
 `;

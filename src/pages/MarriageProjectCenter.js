@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer/Footer";
 import Button from "../components/Button/Button";
 import "./marriageProjectCenter.css";
+import { Avatar } from "@material-ui/core";
 
 const MarriageProjectCenter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +67,7 @@ const MarriageProjectCenter = () => {
       <Purpose>
         <Item>
           <No>
-            <h1>1</h1>
+            <Avatar style={{ color: "#fff", background: "#087DC2" }}>1</Avatar>
           </No>
           <Desc>
             <p>
@@ -77,7 +78,7 @@ const MarriageProjectCenter = () => {
         </Item>
         <Item>
           <No>
-            <h1>2</h1>
+            <Avatar style={{ color: "#fff", background: "#087DC2" }}>2</Avatar>
           </No>
           <Desc>
             <p>Assemble a global coalition of pro-marriage groups.</p>
@@ -85,7 +86,7 @@ const MarriageProjectCenter = () => {
         </Item>
         <Item>
           <No>
-            <h1>3</h1>
+            <Avatar style={{ color: "#fff", background: "#087DC2" }}>3</Avatar>
           </No>
           <Desc>
             <p>
@@ -95,7 +96,7 @@ const MarriageProjectCenter = () => {
         </Item>
         <Item>
           <No>
-            <h1>4</h1>
+            <Avatar style={{ color: "#fff", background: "#087DC2" }}>4</Avatar>
           </No>
           <Desc>
             <p>
@@ -154,7 +155,7 @@ const Banner = styled.div`
     padding: 7%;
     font-size: 300%;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 2%;
   }
   Button {
@@ -181,7 +182,7 @@ const Difference = styled.div`
     color: #000;
     font-size: 300%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
   }
   p {
     text-align: center;
@@ -189,8 +190,9 @@ const Difference = styled.div`
     padding-left: 10%;
     padding-right: 10%;
     line-height: 240%;
-    font-weight: bold;
+    font-weight: 400;
     padding-bottom: 5%;
+    font-size: 120%;
   }
   @media screen and (max-width: 768px) {
     h1 {
@@ -236,8 +238,9 @@ const Purpose = styled.div`
   padding-top: 200px;
   gap: 5%;
   @media screen and (max-width: 768px) {
-    height: 400px;
+    height: 700px;
     padding-top: 130px;
+    grid-template-columns: 100%;
   }
   @media screen and (max-width: 1365px) and (min-width: 769px) {
     padding-top: 150px;
@@ -265,7 +268,8 @@ const Desc = styled.div`
     }
   } */
   p {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 120%;
   }
 `;
 
@@ -274,7 +278,7 @@ const Stand = styled.div`
   position: relative;
   h1 {
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     font-size: 250%;
   }
@@ -283,9 +287,10 @@ const Stand = styled.div`
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 200%;
     padding-bottom: 5%;
+    font-size: 120%;
   }
 
   @media screen and (max-width: 768px) {

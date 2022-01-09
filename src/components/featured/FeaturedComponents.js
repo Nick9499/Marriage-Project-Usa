@@ -71,8 +71,9 @@ const Content = styled.div`
   p {
     margin-top: 7%;
     margin-bottom: 5%;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 240%;
+    font-size: 120%;
   }
   @media screen and (max-width: 768px) {
     h1 {

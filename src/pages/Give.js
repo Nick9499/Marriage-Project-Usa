@@ -1,5 +1,5 @@
 import Button from "../components/Button/Button";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
@@ -12,6 +12,9 @@ const Give = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <GiveContainer>
       <Banner>
@@ -191,7 +194,7 @@ const Partners = styled.div`
   h1 {
     padding-top: 100px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
   }
   p {
     text-align: center;
@@ -212,7 +215,7 @@ const Partners = styled.div`
       /*  margin-top: 5%; */
     }
     p {
-      font-size: 100%;
+      font-size: 120%;
       padding-bottom: 5%;
       font-weight: normal;
     }
@@ -229,24 +232,25 @@ const Partners = styled.div`
 const OneTime = styled.div`
   position: relative;
   background-color: #ffd111;
-  height: 300px;
+  height: 350px;
   h1 {
     text-align: center;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 3%;
   }
   p {
     padding: 10%;
     padding-top: 0;
     text-align: center;
+    font-size: 120%;
     padding-bottom: 2%;
   }
   Button {
     z-index: 9;
   }
   @media screen and (max-width: 768px) {
-    height: 250px;
+    height: 300px;
     h1 {
       padding-top: 0px;
       font-size: 200%;
@@ -270,12 +274,12 @@ const MarriageProject = styled.div`
   h1 {
     padding-top: 100px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
   }
   p {
     text-align: center;
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 120%;
     line-height: 240%;
     padding-left: 10%;

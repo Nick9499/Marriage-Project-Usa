@@ -13,6 +13,9 @@ const Podcast = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     axios.get(url).then((res) => {
@@ -41,7 +44,7 @@ const Podcast = () => {
         </div>
       </section>
       <PodcastSection>
-        <h1>The Marriage Project Partner Podcast Network</h1>
+        <h1>Marriage Project Podcast Network</h1>
         <h2>
           Listen to weekly relationship advice from leading marriage experts!
         </h2>
@@ -95,8 +98,10 @@ const Banner = styled.div`
     font-size: 400%;
   }
   @media screen and (max-width: 768px) {
+    background-size: 100% 100%;
     height: 350px;
     h1 {
+      font-weight: 600;
       font-size: 250%;
       padding-top: 100px;
       padding-left: 10%;
@@ -122,10 +127,12 @@ const PodcastSection = styled.div`
     padding-top: 2%;
     padding-bottom: 10%;
     text-align: center;
+    font-weight: 400;
   }
   @media screen and (max-width: 768px) {
     height: 160px;
     h1 {
+      font-weight: 600;
       padding-top: 10%;
       font-size: 150%;
     }

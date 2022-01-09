@@ -47,9 +47,11 @@ const About = styled.div`
   background: #f8e71c;
   display: grid;
   grid-template-columns: 60% 40%;
-
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
+    height: 650px;
+  }
   @media screen and (max-width: 767px) {
-    height: 800px;
+    height: 900px;
     grid-template-columns: 100%;
     padding-bottom: -20%;
     /* margin-top: 30%; */
@@ -89,9 +91,10 @@ const AboutContent = styled.div`
     padding-bottom: 5%;
   }
   p {
-    font-weight: bold;
+    font-weight: 400;
     line-height: 240%;
     padding-bottom: 5%;
+    font-size: 120%;
   }
   @media screen and (max-width: 767px) {
     h1 {

@@ -45,9 +45,10 @@ const Conference = styled.div`
   }
   p {
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 270%;
     margin-bottom: 5%;
+    font-size: 120%;
   }
   @media screen and (max-width: 768px) {
     background-size: 100% 100%;

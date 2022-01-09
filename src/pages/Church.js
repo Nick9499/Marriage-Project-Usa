@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -10,6 +10,9 @@ const Church = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <ChurchContainer>
       <Banner>
@@ -147,7 +150,7 @@ const Banner = styled.div`
     padding-top: 100px;
     font-size: 400%;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
   }
   @media screen and (max-width: 768px) {
     height: 300px;
@@ -169,7 +172,7 @@ const Simulcast = styled.div`
 
   h1 {
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding-bottom: 3%;
     font-size: 400%;
@@ -179,10 +182,15 @@ const Simulcast = styled.div`
     padding-right: 10%;
     text-align: center;
     padding-bottom: 5%;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 200%;
+    font-size: 120%;
   }
   @media screen and (max-width: 768px) {
+    height: 350px;
+    h1 {
+      font-size: 200%;
+    }
   }
 `;
 
@@ -199,12 +207,13 @@ const Community = styled.div`
     color: #fff;
     font-size: 300%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 40px;
   }
   p {
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 120%;
     color: #fff;
     padding-left: 20%;
     padding-right: 20%;
@@ -227,13 +236,14 @@ const Partners = styled.div`
   h1 {
     font-size: 300%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     padding-bottom: 50px;
   }
   p {
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 120%;
     color: #fff;
     padding-left: 10%;
     padding-right: 10%;
@@ -250,6 +260,9 @@ const Partners = styled.div`
 const Wholesale = styled(Partners)`
   margin-top: 100px;
   background-color: #fff;
+  h1 {
+    font-weight: 600;
+  }
   h1,
   p {
     color: #000;
@@ -257,5 +270,6 @@ const Wholesale = styled(Partners)`
   p {
     padding-left: 10%;
     padding-right: 10%;
+    font-size: 120%;
   }
 `;

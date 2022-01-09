@@ -1,5 +1,5 @@
 import Button from "../components/Button/Button";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import SimpleAccordion from "../components/Accordion/Accordion";
 import Navbar from "../components/Navbar";
@@ -12,6 +12,9 @@ const Conference = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <ConferenceBody>
@@ -153,7 +156,7 @@ const ConferenceBody = styled.div`
 `;
 const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://xomarriage.com/wp-content/uploads/2021/04/XOdayone031-1-scaled.jpg");
+    url("https://images.unsplash.com/photo-1511405889574-b01de1da5441?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-size: cover;
   height: 400px;
   background-position: 50% 30%;
@@ -186,7 +189,8 @@ const Invest = styled.div`
   }
   p {
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 120%;
     color: #fff;
     padding: 5%;
     padding-top: 0;
@@ -221,6 +225,9 @@ const Expect = styled.div`
     padding-top: 200px;
     padding-bottom: 40px;
     color: #fff;
+  }
+  p {
+    font-weight: 400;
   }
   @media screen and (max-width: 768px) {
     height: 1070px;
@@ -283,7 +290,8 @@ const Church = styled.div`
     color: #fff;
     padding-left: 10%;
     padding-right: 10%;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 120%;
     line-height: 240%;
   }
 
@@ -296,9 +304,12 @@ const Church = styled.div`
     p {
       text-align: justify;
       padding-bottom: 10%;
-      line-height: 140%;
+      line-height: 120%;
     }
   }
   @media screen and (max-width: 1365px) and (min-width: 768px) {
+    p {
+      line-height: 120%;
+    }
   }
 `;

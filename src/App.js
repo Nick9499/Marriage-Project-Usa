@@ -18,6 +18,7 @@ import CreativeDirector from "./pages/CreativeDirector";
 import ProgramCordinator from "./pages/ProgramCordinator";
 import DataAnalyst from "./pages/DataAnalyst";
 import Podcast from "./pages/Podcast";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const theme = createTheme({
   palette: {
@@ -31,54 +32,65 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/conference">
-            <Conference />
-          </Route>
-          <Route path="/marriagehelp">
-            <MarriageHelp />
-          </Route>
-          <Route path="/referrals">
-            <Referrals />
-          </Route>
-          <Route path="/give">
-            <Give />
-          </Route>
-          <Route path="/marriageprojectpartners">
-            <MarriageProjectPartner />
-          </Route>
-          <Route path="/onetimegift">
-            <OneTimeGift />
-          </Route>
-          <Route path="/marriageprojectmentorprogram">
-            <MarriageProjectCenter />
-          </Route>
-          <Route path="/churches">
-            <Church />
-          </Route>
-          <Route path="/nowcommunity" component={NowCommunity} />
+        <Route
+          render={({ location }) => (
+            <TransitionGroup>
+              <CSSTransition key={location.key} timeout={500} classNames="fade">
+                <Switch location={location}>
+                  <Route path="/" exact>
+                    <Home />
+                  </Route>
+                  <Route path="/about">
+                    <About />
+                  </Route>
+                  <Route path="/conference">
+                    <Conference />
+                  </Route>
+                  <Route path="/marriagehelp">
+                    <MarriageHelp />
+                  </Route>
+                  <Route path="/referrals">
+                    <Referrals />
+                  </Route>
+                  <Route path="/give">
+                    <Give />
+                  </Route>
+                  <Route path="/marriageprojectpartners">
+                    <MarriageProjectPartner />
+                  </Route>
+                  <Route path="/onetimegift">
+                    <OneTimeGift />
+                  </Route>
+                  <Route path="/marriageprojectmentorprogram">
+                    <MarriageProjectCenter />
+                  </Route>
+                  <Route path="/churches">
+                    <Church />
+                  </Route>
+                  <Route path="/nowcommunity" component={NowCommunity} />
 
-          <Route path="/jobcenter" exact>
-            <JobCenter />
-          </Route>
+                  <Route path="/jobcenter" exact>
+                    <JobCenter />
+                  </Route>
 
-          <Route
-            path="/jobcenter/creativedirector"
-            component={CreativeDirector}
-          />
-          <Route
-            path="/jobcenter/programcordinator"
-            component={ProgramCordinator}
-          />
-          <Route path="/jobcenter/dataanalyst" component={DataAnalyst} />
-          <Route path="/podcast" component={Podcast} />
-        </Switch>
+                  <Route
+                    path="/jobcenter/creativedirector"
+                    component={CreativeDirector}
+                  />
+                  <Route
+                    path="/jobcenter/programcordinator"
+                    component={ProgramCordinator}
+                  />
+                  <Route
+                    path="/jobcenter/dataanalyst"
+                    component={DataAnalyst}
+                  />
+                  <Route path="/podcast" component={Podcast} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
       </Router>
     </ThemeProvider>
   );

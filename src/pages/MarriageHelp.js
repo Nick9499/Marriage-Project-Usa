@@ -1,5 +1,5 @@
 import Button from "../components/Button/Button";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
@@ -12,7 +12,9 @@ const MarriageHelp = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Marriage>
       <MarriageTitle>
@@ -200,9 +202,10 @@ const HopeContent = styled.div`
   padding-right: 5%;
   p {
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     padding-left: 7%;
     line-height: 220%;
+    font-size: 120%;
   }
   @media screen and (max-width: 768px) {
     margin-top: 0px;
@@ -213,6 +216,11 @@ const HopeContent = styled.div`
   @media screen and (min-width: 769px) and (max-width: 1365px) {
     padding-right: 5%;
     margin-top: 70px;
+    line-height: 300%;
+    h1 {
+      font-size: 300%;
+      font-weight: 600;
+    }
   }
 `;
 const Referrals = styled.div`
@@ -239,7 +247,8 @@ const ReferralsContent = styled.div`
     color: #000;
   }
   p {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 120%;
     padding-left: 7%;
   }
   @media screen and (max-width: 768px) {

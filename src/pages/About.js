@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -10,6 +10,9 @@ const About = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <AboutContainer>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -158,12 +161,15 @@ const Mission = styled.div`
   h1 {
     padding: 5%;
     color: #fff;
+    font-size: 400%;
+    font-weight: 600;
   }
   p {
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 240%;
     padding-bottom: 3%;
+    font-size: 120%;
   }
   @media screen and (max-width: 767px) {
     position: relative;
@@ -196,15 +202,18 @@ const Vision = styled.div`
     padding: 5%;
     padding-top: 100px;
     color: #fff;
+    font-size: 400%;
+    font-weight: 600;
   }
   p {
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 240%;
     padding-bottom: 100px;
+    font-size: 120%;
   }
   @media screen and (max-width: 768px) {
-    height: 750px;
+    height: 900px;
     position: relative;
     padding-top: 15%;
     h1 {
@@ -222,7 +231,7 @@ const Vision = styled.div`
   background-size: cover;
   @media screen and (max-width: 1365px) and (min-width: 768px) {
     /* height: 40vh; */
-    height: 600px;
+    height: 700px;
   }
 `;
 
@@ -240,7 +249,8 @@ const History = styled.div`
     font-size: 200%;
   }
   p {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 120%;
     line-height: 240%;
   }
   @media screen and (max-width: 768px) {

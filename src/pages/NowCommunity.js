@@ -1,5 +1,5 @@
 import { Done } from "@material-ui/icons";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -9,6 +9,9 @@ const NowCommunity = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <NowCommunityContainer>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -18,19 +21,17 @@ const NowCommunity = () => {
         <h1>Marriage Project Now Community</h1>
         <BannerSvg>
           <svg
-            id='visual'
-            viewBox='0 0 1366 768'
-            width='100%'
-            height='768'
-            xmlns='http://www.w3.org/2000/svg'
-            version='1.1'
-          >
+            id="visual"
+            viewBox="0 0 1366 768"
+            width="100%"
+            height="768"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1">
             <path
-              d='M0 685L38 680.3C76 675.7 152 666.3 227.8 664.7C303.7 663 379.3 669 455.2 673.3C531 677.7 607 680.3 683 684.5C759 688.7 835 694.3 910.8 699.2C986.7 704 1062.3 708 1138.2 706.7C1214 705.3 1290 698.7 1328 695.3L1366 692L1366 769L1328 769C1290 769 1214 769 1138.2 769C1062.3 769 986.7 769 910.8 769C835 769 759 769 683 769C607 769 531 769 455.2 769C379.3 769 303.7 769 227.8 769C152 769 76 769 38 769L0 769Z'
-              fill='#ffd111'
-              stroke-linecap='round'
-              stroke-linejoin='miter'
-            ></path>
+              d="M0 685L38 680.3C76 675.7 152 666.3 227.8 664.7C303.7 663 379.3 669 455.2 673.3C531 677.7 607 680.3 683 684.5C759 688.7 835 694.3 910.8 699.2C986.7 704 1062.3 708 1138.2 706.7C1214 705.3 1290 698.7 1328 695.3L1366 692L1366 769L1328 769C1290 769 1214 769 1138.2 769C1062.3 769 986.7 769 910.8 769C835 769 759 769 683 769C607 769 531 769 455.2 769C379.3 769 303.7 769 227.8 769C152 769 76 769 38 769L0 769Z"
+              fill="#ffd111"
+              stroke-linecap="round"
+              stroke-linejoin="miter"></path>
           </svg>
         </BannerSvg>
       </Banner>
@@ -42,8 +43,8 @@ const NowCommunity = () => {
         <GrowC>
           <GrowImage>
             <img
-              src='https://xomarriage.com/wp-content/uploads/2020/11/XO-community.png'
-              alt='img'
+              src="https://xomarriage.com/wp-content/uploads/2020/11/XO-community.png"
+              alt="img"
             />
           </GrowImage>
           <GrowContent>
@@ -57,19 +58,17 @@ const NowCommunity = () => {
         </GrowC>
         <GrowSvg>
           <svg
-            id='visual'
-            viewBox='0 0 1366 768'
-            width='100%'
-            height='768'
-            xmlns='http://www.w3.org/2000/svg'
-            version='1.1'
-          >
+            id="visual"
+            viewBox="0 0 1366 768"
+            width="100%"
+            height="768"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1">
             <path
-              d='M0 88L38 88.8C76 89.7 152 91.3 227.8 84.2C303.7 77 379.3 61 455.2 57.5C531 54 607 63 683 70.2C759 77.3 835 82.7 910.8 87.2C986.7 91.7 1062.3 95.3 1138.2 92C1214 88.7 1290 78.3 1328 73.2L1366 68L1366 0L1328 0C1290 0 1214 0 1138.2 0C1062.3 0 986.7 0 910.8 0C835 0 759 0 683 0C607 0 531 0 455.2 0C379.3 0 303.7 0 227.8 0C152 0 76 0 38 0L0 0Z'
-              fill='#ffd111'
-              stroke-linecap='round'
-              stroke-linejoin='miter'
-            ></path>
+              d="M0 88L38 88.8C76 89.7 152 91.3 227.8 84.2C303.7 77 379.3 61 455.2 57.5C531 54 607 63 683 70.2C759 77.3 835 82.7 910.8 87.2C986.7 91.7 1062.3 95.3 1138.2 92C1214 88.7 1290 78.3 1328 73.2L1366 68L1366 0L1328 0C1290 0 1214 0 1138.2 0C1062.3 0 986.7 0 910.8 0C835 0 759 0 683 0C607 0 531 0 455.2 0C379.3 0 303.7 0 227.8 0C152 0 76 0 38 0L0 0Z"
+              fill="#ffd111"
+              stroke-linecap="round"
+              stroke-linejoin="miter"></path>
           </svg>
         </GrowSvg>
       </Growing>
@@ -91,25 +90,23 @@ const NowCommunity = () => {
         </LearningContent>
         <LearningImage>
           <img
-            src='https://xomarriage.com/wp-content/uploads/2021/02/d-a.jpg'
-            alt='img'
+            src="https://xomarriage.com/wp-content/uploads/2021/02/d-a.jpg"
+            alt="img"
           />
         </LearningImage>
         <LearningSvg>
           <svg
-            id='visual'
-            viewBox='0 0 1366 768'
-            width='100%'
-            height='768'
-            xmlns='http://www.w3.org/2000/svg'
-            version='1.1'
-          >
+            id="visual"
+            viewBox="0 0 1366 768"
+            width="100%"
+            height="768"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1">
             <path
-              d='M0 726L32.5 720C65 714 130 702 195 692.7C260 683.3 325 676.7 390 674.2C455 671.7 520 673.3 585.2 676.2C650.3 679 715.7 683 780.8 689.8C846 696.7 911 706.3 976 709.8C1041 713.3 1106 710.7 1171 700.8C1236 691 1301 674 1333.5 665.5L1366 657L1366 769L1333.5 769C1301 769 1236 769 1171 769C1106 769 1041 769 976 769C911 769 846 769 780.8 769C715.7 769 650.3 769 585.2 769C520 769 455 769 390 769C325 769 260 769 195 769C130 769 65 769 32.5 769L0 769Z'
-              fill='#9a5b9f'
-              stroke-linecap='round'
-              stroke-linejoin='miter'
-            ></path>
+              d="M0 726L32.5 720C65 714 130 702 195 692.7C260 683.3 325 676.7 390 674.2C455 671.7 520 673.3 585.2 676.2C650.3 679 715.7 683 780.8 689.8C846 696.7 911 706.3 976 709.8C1041 713.3 1106 710.7 1171 700.8C1236 691 1301 674 1333.5 665.5L1366 657L1366 769L1333.5 769C1301 769 1236 769 1171 769C1106 769 1041 769 976 769C911 769 846 769 780.8 769C715.7 769 650.3 769 585.2 769C520 769 455 769 390 769C325 769 260 769 195 769C130 769 65 769 32.5 769L0 769Z"
+              fill="#9a5b9f"
+              stroke-linecap="round"
+              stroke-linejoin="miter"></path>
           </svg>
         </LearningSvg>
       </Learning>
@@ -128,8 +125,8 @@ const NowCommunity = () => {
         <GroupContent>
           <Discussion>
             <img
-              src='https://xomarriage.com/wp-content/uploads/2021/01/mariage-300x189.png'
-              alt='img'
+              src="https://xomarriage.com/wp-content/uploads/2021/01/mariage-300x189.png"
+              alt="img"
             />
             <h2>Discussion Guide</h2>
             <p>
@@ -161,8 +158,8 @@ const NowCommunity = () => {
           </Discussion>
           <Videos>
             <img
-              src='https://xomarriage.com/wp-content/uploads/2020/11/watching-300x209.png'
-              alt='img'
+              src="https://xomarriage.com/wp-content/uploads/2020/11/watching-300x209.png"
+              alt="img"
             />
             <h2>Marriage Project Now Videos</h2>
             <p>

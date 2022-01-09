@@ -99,6 +99,7 @@ const FooterTop = styled.div`
     outline: none;
     width: 25%;
   }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
     h2 {
@@ -118,6 +119,25 @@ const FooterTop = styled.div`
       width: 100%;
     }
   }
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
+    flex-direction: column;
+    h2 {
+      padding-bottom: 5%;
+      font-size: 180%;
+    }
+    .small {
+      font-size: 80%;
+    }
+    input {
+      padding: 2%;
+      margin-bottom: 2%;
+      width: 100%;
+    }
+    Button {
+      /*  margin-bottom: 10% !important; */
+      width: 100%;
+    }
+  }
 `;
 
 const FooterMid = styled.div`
@@ -125,6 +145,9 @@ const FooterMid = styled.div`
   color: #fff;
   display: grid;
   grid-template-columns: 40% 30% 30%;
+  @media screen and (max-width: 1365px) and (min-width: 769px) {
+    grid-template-columns: 50% 50%;
+  }
   @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
   }
