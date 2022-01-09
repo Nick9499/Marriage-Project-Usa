@@ -61,7 +61,7 @@ export const SidebarMenuWrapper = styled.div`
   align-items: flex-start;
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    overflow-x: scroll;
+
     padding-bottom: 5%;
   }
   @media screen and (max-width: 1024px) {
@@ -70,7 +70,6 @@ export const SidebarMenuWrapper = styled.div`
 `;
 
 export const SidebarMenu = styled.ul`
-  padding-top: 5%;
   display: flex;
   flex-direction: column;
   h4 {
@@ -79,6 +78,9 @@ export const SidebarMenu = styled.ul`
   }
   @media screen and (max-width: 768px) {
     padding-bottom: 5%;
+    h4 {
+      font-size: 70%;
+    }
   }
 `;
 
@@ -93,7 +95,7 @@ export const SidebarLink = styled(LinkR)`
     transition: all 1s;
   }
   @media screen and (max-width: 768px) {
-    font-size: 120%;
+    font-size: 110%;
   }
 `;
 
@@ -107,6 +109,9 @@ export const ContactLink = styled.div`
   a {
     text-decoration: none;
     color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 110%;
   }
 `;
 
@@ -123,6 +128,9 @@ export const Socials = styled.div`
       color: #007bc6;
       transition: all 0.7s;
     }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 110%;
   }
 `;
 
